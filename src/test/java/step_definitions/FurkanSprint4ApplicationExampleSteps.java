@@ -21,7 +21,7 @@ import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class ApplicationExampleSteps {
+public class FurkanSprint4ApplicationExampleSteps {
 	
 	
 	@Given("The User is on the homepage")

@@ -11,36 +11,36 @@
         "steps": [
           {
             "result": {
-              "duration": 1045407000,
+              "duration": 887379000,
               "status": "passed"
             },
             "line": 5,
             "name": "The User is on the homepage",
             "match": {
-              "location": "step_definitions.ApplicationExampleSteps.theUserIsOnTheHomepage()"
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2102921000,
+              "duration": 1673443000,
               "status": "passed"
             },
             "line": 6,
             "name": "The user enters correct credentials and click on login",
             "match": {
-              "location": "step_definitions.ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
             },
             "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-04T22:39:21.464Z",
+        "start_timestamp": "2021-02-04T22:48:00.370Z",
         "before": [
           {
             "result": {
-              "duration": 2313985000,
+              "duration": 1976091000,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
         "after": [
           {
             "result": {
-              "duration": 112639000,
+              "duration": 117735000,
               "status": "passed"
             },
             "match": {
@@ -68,13 +68,13 @@
         "steps": [
           {
             "result": {
-              "duration": 30430974000,
+              "duration": 30611814000,
               "status": "passed"
             },
             "line": 9,
             "name": "The user enters following information to the mortgage application",
             "match": {
-              "location": "step_definitions.ApplicationExampleSteps.theUserEntersFollowingInformationToTheMortgageApplication(java.util.List\u003cpojos.User\u003e)"
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersFollowingInformationToTheMortgageApplication(java.util.List\u003cpojos.User\u003e)"
             },
             "rows": [
               {
@@ -106,25 +106,25 @@
           },
           {
             "result": {
-              "duration": 3537896000,
+              "duration": 3537856000,
               "status": "passed"
             },
             "line": 14,
             "name": "The user clicks on application list",
             "match": {
-              "location": "step_definitions.ApplicationExampleSteps.theUserClicksOnApplicationList()"
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3677115000,
+              "duration": 3599281000,
               "status": "passed"
             },
             "line": 15,
             "name": "The user should see that the ssn dob information is right",
             "match": {
-              "location": "step_definitions.ApplicationExampleSteps.theUserShouldSeeThatTheNameSsnDobInformationIsRight()"
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserShouldSeeThatTheNameSsnDobInformationIsRight()"
             },
             "keyword": "Then "
           }
@@ -140,7 +140,7 @@
     "description": "",
     "id": "verify-application-information",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/applicationExample.feature",
+    "uri": "file:src/test/resources/features/furkanSprint4ApplicationExample.feature",
     "tags": [
       {
         "name": "@furkan",
