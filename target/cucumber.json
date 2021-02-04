@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,21 +11,36 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1045407000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The User is on the homepage",
+            "match": {
+              "location": "step_definitions.ApplicationExampleSteps.theUserIsOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2102921000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "The user in on the Preaproval details page",
-            "match": {},
-            "keyword": "Given "
+            "name": "The user enters correct credentials and click on login",
+            "match": {
+              "location": "step_definitions.ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
+            },
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-03T23:55:23.518Z",
+        "start_timestamp": "2021-02-04T22:39:21.464Z",
         "before": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2313985000,
               "status": "passed"
             },
             "match": {
@@ -34,13 +49,13 @@
           }
         ],
         "line": 8,
-        "name": "The user not working with realtor",
+        "name": "The user\u0027s information in application list should match with actual data",
         "description": "",
-        "id": "preapproval-details;the-user-not-working-with-realtor",
+        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data",
         "after": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 112639000,
               "status": "passed"
             },
             "match": {
@@ -53,111 +68,82 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 30430974000,
+              "status": "passed"
             },
             "line": 9,
-            "name": "The user chooses \"no\" for question if working with a realtor",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+            "name": "The user enters following information to the mortgage application",
+            "match": {
+              "location": "step_definitions.ApplicationExampleSteps.theUserEntersFollowingInformationToTheMortgageApplication(java.util.List\u003cpojos.User\u003e)"
             },
-            "line": 10,
-            "name": "The user should not be able to put any information in Realtor Information Box",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@nastya"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "The user in on the Preaproval details page",
-            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "lastName",
+                  "ssn",
+                  "dob",
+                  "cellPhoneNo",
+                  "email",
+                  "monthlyIncome",
+                  "maritalStatus"
+                ]
+              },
+              {
+                "cells": [
+                  "Jo",
+                  "Biden",
+                  "123456789",
+                  "01/01/1945",
+                  "987654321",
+                  "jbiden@gmail.com",
+                  "10000",
+                  "Married"
+                ]
+              }
+            ],
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-03T23:55:23.625Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "The user is working with realtor",
-        "description": "",
-        "id": "preapproval-details;the-user-is-working-with-realtor",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "The user chooses \"yes\" for question if working with realtor",
-            "match": {},
-            "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3537896000,
+              "status": "passed"
             },
             "line": 14,
-            "name": "The user should be able to put in \"name\" and \"phone number\" and \"email adrress\" of the realtor",
-            "match": {},
+            "name": "The user clicks on application list",
+            "match": {
+              "location": "step_definitions.ApplicationExampleSteps.theUserClicksOnApplicationList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3677115000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The user should see that the ssn dob information is right",
+            "match": {
+              "location": "step_definitions.ApplicationExampleSteps.theUserShouldSeeThatTheNameSsnDobInformationIsRight()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@nastya"
+            "name": "@furkan"
           }
         ]
       }
     ],
-    "name": "Preapproval Details",
-    "description": "\tAs as user I want to be able to put my information for the Preapproval details",
-    "id": "preapproval-details",
+    "name": "Verify application information",
+    "description": "",
+    "id": "verify-application-information",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/preaprovalDetails.feature",
+    "uri": "file:src/test/resources/features/applicationExample.feature",
     "tags": [
       {
-        "name": "@nastya",
+        "name": "@furkan",
         "type": "Tag",
         "location": {
           "line": 1,

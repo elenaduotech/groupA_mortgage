@@ -10,11 +10,12 @@ public class User {
 	private String cellPhoneNumber;
 	private String email;
 	private String monthlyIncome;
+	private String maritalStatus;
 	
 	
-	
+	public User() {}
 	public User(String firstName, String lastName, String ssn, String dateOfBirth, String cellPhoneNumber, String email,
-			String monthlyIncome) {
+			String monthlyIncome,String maritalStatus) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -23,6 +24,7 @@ public class User {
 		this.cellPhoneNumber = cellPhoneNumber;
 		this.email = email;
 		this.monthlyIncome = monthlyIncome;
+		this.maritalStatus = maritalStatus;
 	}
 	
 	public String getFirstName() {
@@ -66,6 +68,12 @@ public class User {
 	}
 	public void setMonthlyIncome(String monthlyIncome) {
 		this.monthlyIncome = monthlyIncome;
+	}
+	public String getMaritalStatus() {
+		return maritalStatus;
+	}
+	public void setMaritalStatus(String maritalStatus) {
+		this.maritalStatus = maritalStatus;
 	}
 	
 

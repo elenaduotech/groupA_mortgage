@@ -19,7 +19,7 @@ public class ApplicationListPage {
 	@FindBy (xpath = "((//tr[@role='row'])[2]/td)[3]")
 	public WebElement loanAmount;
 	
-	@FindBy (xpath = "//a[@href='mortagageloandegtails.php?id=163']")
+	@FindBy (xpath = "(//a[@href])[8]")
 	public WebElement viewDetailsButton;
 	
 	

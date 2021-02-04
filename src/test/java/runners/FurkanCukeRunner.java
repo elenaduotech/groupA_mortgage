@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@temp",
+		tags = "@furkan",
 
 		
 		features = "src/test/resources/features",  // feature file folder path
@@ -35,6 +35,6 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		,snippets = SnippetType.CAMELCASE // to generate snippets with camelcase syntax
 				
 		)
-public class CukeRunner {
+public class FurkanCukeRunner {
 
 }

@@ -13,20 +13,21 @@ import utilities.Driver;
 		}
 		
 		
-		@FindBy (id = "realtor1")
+		@FindBy (xpath = "//label[@for='realtor1']")
 		public WebElement workWithRealtorYesBox;
 		
-		@FindBy (id = "realtor2")
+		@FindBy (xpath = "//label[@for='realtor2']")
 		public WebElement workWithRealtorNoBox;
 		
 		@FindBy (id = "realtorinfo")
 		public WebElement realtorInfo;
 		
-		@FindBy (id = "loanofficer1")
+		@FindBy (xpath = "//label[@for='loanofficer1']")
 		public WebElement workWithLoanOfficerYesBox;
 		
-		@FindBy (id = "loanofficer2")
+		@FindBy (xpath = "//label[@for='loanofficer2']")
 		public WebElement workWithLoanOfficerNoBox;
+		
 		
 		@FindBy (id = "select2-purpose_loan-j7-container")
 		public WebElement purposeOfLoanDropdownBox;
@@ -52,11 +53,12 @@ import utilities.Driver;
 		@FindBy (xpath = "//a[@href='#next']")
 		public WebElement nextButton;
 		
-		@FindBy (id = "coborrower1")
+		@FindBy (xpath = "//label[@for='coborrower1']")
 		public WebElement coborrowerYesBox;
 		
-		@FindBy (id = "coborrower2")
+		@FindBy (xpath = "//label[@for='coborrower2']")
 		public WebElement coborrowerNoBox;
+		
 		
 		@FindBy (id = "b_firstName")
 		public WebElement borrowerFirstName;
@@ -79,8 +81,12 @@ import utilities.Driver;
 		@FindBy (id = "b_ssn")
 		public WebElement borrowerSsn;
 		
-		@FindBy (id = "select2-b_marital-container")
+		@FindBy (xpath = "(//span[@class='select2-selection__arrow'])[3]")
 		public WebElement maritalStatusDropdownBox;
+		
+		@FindBy (xpath = "//li[@id='select2-b_marital-result-0t2t-Married']")
+		public WebElement marriedOption;
+		
 		
 		@FindBy (id = "b_cell")
 		public WebElement borrowerCellPhoneNo;
@@ -88,16 +94,16 @@ import utilities.Driver;
 		@FindBy (id = "b_home")
 		public WebElement borrowerHomePhoneNo;
 		
-		@FindBy (id = "privacypolicy")
+		@FindBy (xpath = "//label[@for='privacypolicy']")
 		public WebElement privacyPolicyBox;
 		
 		@FindBy (xpath = "//a[@href='#previous']")
 		public WebElement previousButton;
 		
-		@FindBy (id = "expense1")
+		@FindBy (xpath = "//label[@for='expense1']")
 		public WebElement rentBox;
 		
-		@FindBy (id = "expense2")
+		@FindBy (xpath = "//label[@for='expense2']")
 		public WebElement ownBox;
 		
 		@FindBy (id = "monthlyrentalpayment")
@@ -108,6 +114,10 @@ import utilities.Driver;
 		
 		@FindBy (id = "currentjob1")
 		public WebElement currentJobBox;
+		
+		@FindBy (id = "employername1")
+		public WebElement employerName;
+		
 		
 		@FindBy (id = "grossmonthlyincome")
 		public WebElement grossMonthlyIncome;
@@ -127,10 +137,10 @@ import utilities.Driver;
 		@FindBy (xpath = "//div[@class='loanAmountdiv']/lebel")
 		public WebElement borrowerTotalIncome;
 		
-		@FindBy (id = "creditreport1")
+		@FindBy (xpath = "//label[@for='creditreport1']")
 		public WebElement preapprovalInquiryYesBox;
 		
-		@FindBy (id = "creditreport2")
+		@FindBy (xpath = "//label[@for='creditreport2']")
 		public WebElement preapprovalInquiryNoBox;
 		
 		@FindBy (id = "eConsentdeclarerFirstName")
@@ -142,14 +152,21 @@ import utilities.Driver;
 		@FindBy (id = "eConsentdeclarerEmail")
 		public WebElement eConsentdeclarerEmail;
 		
-		@FindBy (id = "agree")
+		@FindBy (xpath = "//label[@for='agree']")
 		public WebElement agreeBox;
 		
-		@FindBy (id = "dontagree")
+		@FindBy (xpath = "//label[@for='dontagree']")
 		public WebElement dontAgreeBox;
 		
 		@FindBy (xpath = "//a[@href='#finish']")
 		public WebElement saveButton;
+		
+		@FindBy (xpath = "//div[@class='alert alert-succes']")
+		public WebElement successMessage;
+		
+		
+		
+		
 		
 		
 
