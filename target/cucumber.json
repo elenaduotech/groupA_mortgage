@@ -1,0 +1,169 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-03T23:55:23.518Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "The user not working with realtor",
+        "description": "",
+        "id": "preapproval-details;the-user-not-working-with-realtor",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user chooses \"no\" for question if working with a realtor",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user should not be able to put any information in Realtor Information Box",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-03T23:55:23.625Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "The user is working with realtor",
+        "description": "",
+        "id": "preapproval-details;the-user-is-working-with-realtor",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "The user chooses \"yes\" for question if working with realtor",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "The user should be able to put in \"name\" and \"phone number\" and \"email adrress\" of the realtor",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      }
+    ],
+    "name": "Preapproval Details",
+    "description": "\tAs as user I want to be able to put my information for the Preapproval details",
+    "id": "preapproval-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/preaprovalDetails.feature",
+    "tags": [
+      {
+        "name": "@nastya",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
