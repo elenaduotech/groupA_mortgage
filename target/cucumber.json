@@ -11,55 +11,43 @@
         "steps": [
           {
             "result": {
-              "duration": 1108537000,
+              "duration": 2550000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "The User is on the homepage",
+            "name": "The user is on homepage",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
+              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1839117000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
-            },
-            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-06T02:26:26.976Z",
+        "start_timestamp": "2021-02-06T06:57:30.285Z",
         "before": [
           {
             "result": {
-              "duration": 2267380000,
+              "duration": 2861000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions.Hooks.setupScenario()"
+              "location": "step_definitions1.Hooks.setupScenario()"
             }
           }
         ],
         "line": 8,
-        "name": "The user\u0027s information in application list should match with actual data",
+        "name": "Verify positive login",
         "description": "",
-        "id": "verify-application-information-with-multiple-user;the-user-s-information-in-application-list-should-match-with-actual-data",
+        "id": "verify-customer-sign-in-information;verify-positive-login",
         "after": [
           {
             "result": {
-              "duration": 124756000,
+              "duration": 761000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -68,86 +56,422 @@
         "steps": [
           {
             "result": {
-              "duration": 31145052000,
+              "duration": 2935000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "The user enters following information to the mortgage application",
+            "name": "The user enter correct email and password and clicks Login",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersFollowingInformationToTheMortgageApplication(java.util.List\u003cpojos.User\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "name",
-                  "lastName",
-                  "ssn",
-                  "dob",
-                  "cellPhoneNo",
-                  "email",
-                  "monthlyIncome",
-                  "maritalStatus"
-                ]
-              },
-              {
-                "cells": [
-                  "Jo",
-                  "Biden",
-                  "123456789",
-                  "01/01/1945",
-                  "987654321",
-                  "jbiden@gmail.com",
-                  "10000",
-                  "Married"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3672751000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
+              "location": "step_definitions1.SignInStepDefs.theUserEnterCorrectEmailAndPasswordAndClicksLogin()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3752151000,
+              "duration": 39000000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "The user should see that the ssn dob information is right",
+            "line": 10,
+            "name": "The user should see his name",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserShouldSeeThatTheNameSsnDobInformationIsRight()"
+              "location": "step_definitions1.SignInStepDefs.theUserShouldSeeHisName()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@furkan1"
+            "name": "@temp"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2634000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on homepage",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T06:57:39.607Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1407000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": ": Verify negative log in",
+        "description": "",
+        "id": "verify-customer-sign-in-information;:-verify-negative-log-in;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 812000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 482000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The user enters \"vickyrid@mc.com\" and \"\u003cwrong_password\u003e\" and clicks Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vickyrid@mc.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"\u003cwrong_password\u003e\"",
+                  "offset": 38
+                }
+              ],
+              "location": "step_definitions1.SignInStepDefs.theUserEntersAndAndClicksLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user should not login and the error message should appear",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserShouldNotLoginAndTheErrorMessageShouldAppear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@temp"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2032000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on homepage",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T06:57:45.016Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1382000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": ": Verify negative log in",
+        "description": "",
+        "id": "verify-customer-sign-in-information;:-verify-negative-log-in;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 703000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 451000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The user enters \"jackpom@mc.com\" and \"\u003cwrong_password\u003e\" and clicks Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jackpom@mc.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"\u003cwrong_password\u003e\"",
+                  "offset": 37
+                }
+              ],
+              "location": "step_definitions1.SignInStepDefs.theUserEntersAndAndClicksLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user should not login and the error message should appear",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserShouldNotLoginAndTheErrorMessageShouldAppear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@temp"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1986000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on homepage",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T06:57:49.652Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1312000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": ": Verify negative log in",
+        "description": "",
+        "id": "verify-customer-sign-in-information;:-verify-negative-log-in;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 710000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 469000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The user enters \"kentsmith@mc.com\" and \"\u003cwrong_password\u003e\" and clicks Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kentsmith@mc.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"\u003cwrong_password\u003e\"",
+                  "offset": 39
+                }
+              ],
+              "location": "step_definitions1.SignInStepDefs.theUserEntersAndAndClicksLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user should not login and the error message should appear",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserShouldNotLoginAndTheErrorMessageShouldAppear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@temp"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2634000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on homepage",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T06:57:54.184Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1354000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Verify log out",
+        "description": "",
+        "id": "verify-customer-sign-in-information;verify-log-out",
+        "after": [
+          {
+            "result": {
+              "duration": 1209000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3289000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The user enter correct email and password and clicks Login",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserEnterCorrectEmailAndPasswordAndClicksLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 443000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The user clicks on picture image and presses Log out",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserClicksOnPictureImageAndPressesLogOut()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The user should log out and land on homepage with Welcome Back, Automation Testers! message",
+            "match": {
+              "location": "step_definitions1.SignInStepDefs.theUserShouldLogOutAndLandOnHomepageWithWelcomeBackAutomationTestersMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@temp"
           }
         ]
       }
     ],
-    "name": "Verify application information with multiple user",
+    "name": "Verify customer Sign in information",
     "description": "",
-    "id": "verify-application-information-with-multiple-user",
+    "id": "verify-customer-sign-in-information",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/furkanSprint4ApplicationExample.feature",
+    "uri": "file:src/test/resources/features/elenaSprint4SingIn.feature",
     "tags": [
       {
-        "name": "@furkan1",
+        "name": "@temp",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 1
+          "column": 2
         }
       }
     ]

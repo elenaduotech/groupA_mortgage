@@ -1,4 +1,4 @@
-package step_definitions3;
+package step_definitions1;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -36,10 +36,8 @@ public class JavaScriptVerifDefs {
 	     
 	    		
 		String expectedStroke = "stroke: rgb(92, 107, 124);";
-//		 BrowserUtils.hover(sp.movingIcon);
-		
-		Actions actions = new Actions(Driver.getDriver());
-		actions.moveToElement(sp.movingIcon).build().perform();
+	 BrowserUtils.hover(sp.movingIcon);
+
 		
 		String actualStroke = sp.movingIcon.getAttribute("style");
 		

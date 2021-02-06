@@ -1,4 +1,4 @@
-package step_definitions3;
+package step_definitions1;
 
 import static org.junit.Assert.assertEquals;
 
@@ -27,7 +27,7 @@ SignInPage sp = new SignInPage();
 		sp.mortgageApplication.click();
 		
 		BrowserUtils.waitFor(5);
-		ExcelUtils sheet = new ExcelUtils("src/test/resources/testData/testData.xlsx", "Sheet1");
+		ExcelUtils sheet = new ExcelUtils("src/test/resources/testData/testDataElena.xlsx", "Sheet1");
 		
 		List<Map<String, String>> rows = sheet.getDataAsMap();
 		

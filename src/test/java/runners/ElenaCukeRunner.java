@@ -13,12 +13,12 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@nastya",
+		tags = "@temp",
 
 		
 		features = "src/test/resources/features",  // feature file folder path
 
-		glue = "step_definitions3", // step def classes folder path
+    	glue = "step_definitions1", // step def classes folder path
 
 		
 		plugin = {  "summary", // for generating step definition snippets
@@ -37,6 +37,6 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		,snippets = SnippetType.CAMELCASE // to generate snippets with camelcase syntax
 				
 		)
-public class NastyaCukeRunner {
+public class ElenaCukeRunner {
 
 }
