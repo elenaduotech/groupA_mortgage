@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,55 +11,427 @@
         "steps": [
           {
             "result": {
-              "duration": 1108537000,
+              "duration": 2870000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "The User is on the homepage",
+            "line": 6,
+            "name": "The user in on Main Page",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1839117000,
+              "duration": 5243000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
             },
-            "keyword": "When "
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-06T02:26:26.976Z",
+        "start_timestamp": "2021-02-06T19:13:49.778Z",
         "before": [
           {
             "result": {
-              "duration": 2267380000,
+              "duration": 2782000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions.Hooks.setupScenario()"
+              "location": "step_definitions2.Hooks.setupScenario()"
             }
           }
         ],
-        "line": 8,
-        "name": "The user\u0027s information in application list should match with actual data",
+        "line": 15,
+        "name": "Estimated purchase price with down payment amount",
         "description": "",
-        "id": "verify-application-information-with-multiple-user;the-user-s-information-in-application-list-should-match-with-actual-data",
+        "id": "estimated-purchase-price;estimated-purchase-price-with-down-payment-amount;;2",
         "after": [
           {
             "result": {
-              "duration": 124756000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 200000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user enters \"500000\" for estimated purchase",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theUserEntersForEstimatedPurchase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user enters \"20000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"20000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theUserEnters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The message should display the \"480000 $\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"480000 $\"",
+                  "offset": 31
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theMessageShouldDisplayThe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya3"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1154000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4784000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T19:14:01.211Z",
+        "before": [
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Estimated purchase price with down payment amount",
+        "description": "",
+        "id": "estimated-purchase-price;estimated-purchase-price-with-down-payment-amount;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 195000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user enters \"25000\" for estimated purchase",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theUserEntersForEstimatedPurchase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user enters \"2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theUserEnters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The message should display the \"23000 $\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"23000 $\"",
+                  "offset": 31
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theMessageShouldDisplayThe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya3"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1256000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4775000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T19:14:07.542Z",
+        "before": [
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Estimated purchase price with down payment amount",
+        "description": "",
+        "id": "estimated-purchase-price;estimated-purchase-price-with-down-payment-amount;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user enters \"12800\" for estimated purchase",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12800\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theUserEntersForEstimatedPurchase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user enters \"128\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"128\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theUserEnters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The message should display the \"12672 $\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12672 $\"",
+                  "offset": 31
+                }
+              ],
+              "location": "step_definitions2.EstimationCalculator1.theMessageShouldDisplayThe(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya3"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1131000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4854000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T19:14:13.942Z",
+        "before": [
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Source of payment",
+        "description": "",
+        "id": "estimated-purchase-price;source-of-payment",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -68,82 +440,626 @@
         "steps": [
           {
             "result": {
-              "duration": 31145052000,
+              "duration": 77000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "The user enters following information to the mortgage application",
+            "line": 21,
+            "name": "The user clicks on the drop down menu for  the source of payment",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersFollowingInformationToTheMortgageApplication(java.util.List\u003cpojos.User\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "name",
-                  "lastName",
-                  "ssn",
-                  "dob",
-                  "cellPhoneNo",
-                  "email",
-                  "monthlyIncome",
-                  "maritalStatus"
-                ]
-              },
-              {
-                "cells": [
-                  "Jo",
-                  "Biden",
-                  "123456789",
-                  "01/01/1945",
-                  "987654321",
-                  "jbiden@gmail.com",
-                  "10000",
-                  "Married"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3672751000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
+              "location": "step_definitions2.EstimationCalculator1.theUserClicksOnTheDropDownMenuForTheSourceOfPayment()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3752151000,
+              "duration": 3216000000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "The user should see that the ssn dob information is right",
+            "line": 22,
+            "name": "The user should see following options",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserShouldSeeThatTheNameSsnDobInformationIsRight()"
+              "location": "step_definitions2.EstimationCalculator1.theUserShouldSeeFollowingOptions(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Checking/Savings (most recent bank statement)"
+                ]
+              },
+              {
+                "cells": [
+                  "Equity on Pending Sale (executed sales contract)"
+                ]
+              },
+              {
+                "cells": [
+                  "Other type of Down Payment"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "The user clicks Next",
+            "match": {
+              "location": "step_definitions2.EstimationCalculator1.theUserClicksNext()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya3"
+          }
+        ]
+      }
+    ],
+    "name": "Estimated purchase price",
+    "description": "\tAs a user I want to calculate my loan amount by entering the down payment and percentage",
+    "id": "estimated-purchase-price",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/estimate_calculator1.feature",
+    "tags": [
+      {
+        "name": "@nastya3",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1047000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4746000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T19:14:23.404Z",
+        "before": [
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Puprose of the loan entrees",
+        "description": "",
+        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 275000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks on the purpose of the loan and enters the \"Business Purchase\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Business Purchase\"",
+                  "offset": 58
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No results found\"",
+                  "offset": 60
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@furkan1"
+            "name": "@nastya2"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1073000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4760000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T19:14:29.558Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Puprose of the loan entrees",
+        "description": "",
+        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks on the purpose of the loan and enters the \"Condominium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Condominium\"",
+                  "offset": 58
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No results found\"",
+                  "offset": 60
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya2"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1043000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5001000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T19:14:35.639Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Puprose of the loan entrees",
+        "description": "",
+        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks on the purpose of the loan and enters the \"Apartment Purchase\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apartment Purchase\"",
+                  "offset": 58
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No results found\"",
+                  "offset": 60
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya2"
           }
         ]
       }
     ],
-    "name": "Verify application information with multiple user",
-    "description": "",
-    "id": "verify-application-information-with-multiple-user",
+    "name": "Preapproval Inquiry",
+    "description": "\tAs as user I should not be able to change the purpose of a loan",
+    "id": "preapproval-inquiry",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/furkanSprint4ApplicationExample.feature",
+    "uri": "file:src/test/resources/features/purpose_of_loan.feature",
     "tags": [
       {
-        "name": "@furkan1",
+        "name": "@nastya2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-06T19:14:41.964Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Realtor option with no",
+        "description": "",
+        "id": "realtor-information;realtor-option-with-no",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1152000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on the Main Page",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserInOnTheMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4741000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user click on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserClickOnTheMortgageApplication()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user chooses no for question",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesNoForQuestion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user should not be able to put any information in Realtor Information Box",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldNotBeAbleToPutAnyInformationInRealtorInformationBox()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T19:14:48.191Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Realtor option with yes",
+        "description": "",
+        "id": "realtor-information;realtor-option-with-yes",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4962000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user chooses yes for question",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesYesForQuestion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3150000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user should be able to put in info of the realtor",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldBeAbleToPutInInfoOfTheRealtor()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5605000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The user chooses no for loan officer",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesNoForLoanOfficer()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The user should see check mark next to no option",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldSeeCheckMarkNextToNoOption()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user click on yes",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserClickOnYes()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user should be able to see check mark next to yes option",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldBeAbleToSeeCheckMarkNextToYesOption()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya1"
+          }
+        ]
+      }
+    ],
+    "name": "Realtor Information",
+    "description": "As a user when I choose no for realtor I should not be able to enter their information",
+    "id": "realtor-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/realtor_loan_checkboxes.feature",
+    "tags": [
+      {
+        "name": "@nastya1",
         "type": "Tag",
         "location": {
           "line": 1,
