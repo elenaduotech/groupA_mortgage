@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 887379000,
+              "duration": 1108537000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1673443000,
+              "duration": 1839117000,
               "status": "passed"
             },
             "line": 6,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-04T22:48:00.370Z",
+        "start_timestamp": "2021-02-06T02:26:26.976Z",
         "before": [
           {
             "result": {
-              "duration": 1976091000,
+              "duration": 2267380000,
               "status": "passed"
             },
             "match": {
@@ -51,11 +51,11 @@
         "line": 8,
         "name": "The user\u0027s information in application list should match with actual data",
         "description": "",
-        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data",
+        "id": "verify-application-information-with-multiple-user;the-user-s-information-in-application-list-should-match-with-actual-data",
         "after": [
           {
             "result": {
-              "duration": 117735000,
+              "duration": 124756000,
               "status": "passed"
             },
             "match": {
@@ -68,7 +68,7 @@
         "steps": [
           {
             "result": {
-              "duration": 30611814000,
+              "duration": 31145052000,
               "status": "passed"
             },
             "line": 9,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 3537856000,
+              "duration": 3672751000,
               "status": "passed"
             },
             "line": 14,
@@ -118,7 +118,7 @@
           },
           {
             "result": {
-              "duration": 3599281000,
+              "duration": 3752151000,
               "status": "passed"
             },
             "line": 15,
@@ -131,19 +131,19 @@
         ],
         "tags": [
           {
-            "name": "@furkan"
+            "name": "@furkan1"
           }
         ]
       }
     ],
-    "name": "Verify application information",
+    "name": "Verify application information with multiple user",
     "description": "",
-    "id": "verify-application-information",
+    "id": "verify-application-information-with-multiple-user",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/furkanSprint4ApplicationExample.feature",
     "tags": [
       {
-        "name": "@furkan",
+        "name": "@furkan1",
         "type": "Tag",
         "location": {
           "line": 1,

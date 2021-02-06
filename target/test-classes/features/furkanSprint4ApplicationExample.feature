@@ -1,5 +1,5 @@
-@furkan
-Feature: Verify application information
+@furkan1
+Feature: Verify application information with multiple user
 
 Background: 
 		Given The User is on the homepage

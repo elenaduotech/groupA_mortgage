@@ -20,6 +20,7 @@ import pojos.User;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ExcelUtils;
 
 public class FurkanSprint4ApplicationExampleSteps {
 	
@@ -42,15 +43,18 @@ public class FurkanSprint4ApplicationExampleSteps {
 
 	@Given("The user enters following information to the mortgage application")
 	public void theUserEntersFollowingInformationToTheMortgageApplication(List<User> dataTable) {
-		
+		ExcelUtils excel = new ExcelUtils("testData.xlsx","Sheet1");
+		JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
 	    User user = dataTable.get(0);
 	    MainPage mp = new MainPage();
 	    mp.mortgageApplication.click();
 	    BrowserUtils.waitFor(3);
 	    MortgageApplicationPage ma = new MortgageApplicationPage();
-	    ma.workWithRealtorNoBox.click();
-	    ma.workWithLoanOfficerNoBox.click();
-	    ma.estimatedPurchasePrice.sendKeys("300000");
+	    BrowserUtils.waitForClickablility(ma.workWithRealtorNoBox, 3);
+	    js.executeScript("arguments[0].click();", ma.workWithRealtorNoBox);
+	    BrowserUtils.waitForClickablility(ma.workWithLoanOfficerNoBox, 3);
+	    js.executeScript("arguments[0].click();", ma.workWithLoanOfficerNoBox);
+	    ma.estimatedPurchasePrice.sendKeys(excel.getCellData(1, 0));
 	    ma.downpaymentPercentage.click();
 	    ma.downpaymentPercentage.sendKeys(Keys.BACK_SPACE);
 	    ma.downpaymentPercentage.sendKeys("10");
@@ -59,7 +63,6 @@ public class FurkanSprint4ApplicationExampleSteps {
 	    
 	    
 	    BrowserUtils.waitForClickablility(ma.coborrowerNoBox, 3);
-	    JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
 	    js.executeScript("arguments[0].click();", ma.coborrowerNoBox);
 	    ma.borrowerFirstName.sendKeys(user.getFirstName());
 	    ma.borrowerLastName.sendKeys(user.getLastName());
