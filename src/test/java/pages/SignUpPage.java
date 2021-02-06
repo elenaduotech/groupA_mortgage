@@ -28,5 +28,6 @@ public class SignUpPage {
 	@FindBy (id = "register")
 	public WebElement signUpButton;
 	
-
+	@FindBy (className = "text-center")
+	public WebElement successfulText;
 }
