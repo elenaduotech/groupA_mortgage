@@ -1,0 +1,155 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1108537000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The User is on the homepage",
+            "match": {
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1839117000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters correct credentials and click on login",
+            "match": {
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T02:26:26.976Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2267380000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "The user\u0027s information in application list should match with actual data",
+        "description": "",
+        "id": "verify-application-information-with-multiple-user;the-user-s-information-in-application-list-should-match-with-actual-data",
+        "after": [
+          {
+            "result": {
+              "duration": 124756000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31145052000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters following information to the mortgage application",
+            "match": {
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersFollowingInformationToTheMortgageApplication(java.util.List\u003cpojos.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "lastName",
+                  "ssn",
+                  "dob",
+                  "cellPhoneNo",
+                  "email",
+                  "monthlyIncome",
+                  "maritalStatus"
+                ]
+              },
+              {
+                "cells": [
+                  "Jo",
+                  "Biden",
+                  "123456789",
+                  "01/01/1945",
+                  "987654321",
+                  "jbiden@gmail.com",
+                  "10000",
+                  "Married"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3672751000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The user clicks on application list",
+            "match": {
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3752151000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The user should see that the ssn dob information is right",
+            "match": {
+              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserShouldSeeThatTheNameSsnDobInformationIsRight()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@furkan1"
+          }
+        ]
+      }
+    ],
+    "name": "Verify application information with multiple user",
+    "description": "",
+    "id": "verify-application-information-with-multiple-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/furkanSprint4ApplicationExample.feature",
+    "tags": [
+      {
+        "name": "@furkan1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

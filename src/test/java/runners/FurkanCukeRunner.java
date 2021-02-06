@@ -13,11 +13,11 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@temp",
+		tags = "@furkan1",
 
 		
 		features = "src/test/resources/features",  // feature file folder path
-		glue = "step_definitions3", // step def classes folder path
+		glue = "step_definitions", // step def classes folder path
 		
 		plugin = {  "summary", // for generating step definition snippets
 				    "html:target/html-report.html", // to generate basic cucumber html report
@@ -26,7 +26,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 				    "rerun:target/failed-scenarios.txt" // to create a text file with the paths for failed scenarios to be re-run
 		         }  
 		
-		//,dryRun = true  // to run the test without launching, we need this to generate step def snippets
+	//	,dryRun = true  // to run the test without launching, we need this to generate step def snippets
 		
 		,monochrome = true  // to display console characters correctly in Windows
 		
@@ -35,6 +35,6 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		,snippets = SnippetType.CAMELCASE // to generate snippets with camelcase syntax
 				
 		)
-public class CukeRunner {
+public class FurkanCukeRunner {
 
 }

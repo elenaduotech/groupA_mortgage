@@ -1,0 +1,44 @@
+package runners;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.CucumberOptions.SnippetType;
+
+@RunWith (Cucumber.class)
+
+@CucumberOptions (
+		
+
+		
+
+		tags = "@nastya",
+
+		
+		features = "src/test/resources/features",  // feature file folder path
+<<<<<<< HEAD:src/test/java/runners/CukeRunner.java
+		glue = "step_definitions3", // step def classes folder path
+=======
+		glue = "step_definitions1", // step def classes folder path
+>>>>>>> 500c5d405ffb7211a7013aae362466e38a592415:src/test/java/runners/NastyaCukeRunner.java
+		
+		plugin = {  "summary", // for generating step definition snippets
+				    "html:target/html-report.html", // to generate basic cucumber html report
+				    "json:target/cucumber.json", // to generate json report for pretty html report
+				    "pretty", // add more details onto the console report
+				    "rerun:target/failed-scenarios.txt" // to create a text file with the paths for failed scenarios to be re-run
+		         }  
+		
+		//,dryRun = true  // to run the test without launching, we need this to generate step def snippets
+		
+		,monochrome = true  // to display console characters correctly in Windows
+		
+		,stepNotifications = true	// to see the step reports for each step of scenarios
+		
+		,snippets = SnippetType.CAMELCASE // to generate snippets with camelcase syntax
+				
+		)
+public class NastyaCukeRunner {
+
+}
