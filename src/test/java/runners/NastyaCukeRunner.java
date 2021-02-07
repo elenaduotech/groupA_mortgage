@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@nastya",
+		tags = "@regression",
 
 		
 		features = "src/test/resources/features",  // feature file folder path

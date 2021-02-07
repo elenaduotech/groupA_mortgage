@@ -50,7 +50,7 @@ public class Hooks {
 		
 		
 		
-//		Driver.quit();
+		Driver.quit();
 	}
 	
 	

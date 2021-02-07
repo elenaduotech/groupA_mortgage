@@ -1,3 +1,4 @@
+@elenaRegister
 Feature: User registration feature
   
  

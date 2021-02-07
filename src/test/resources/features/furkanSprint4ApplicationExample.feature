@@ -1,4 +1,4 @@
-@furkan1
+@furkan
 Feature: Verify application information with multiple user
 
 Background: 
