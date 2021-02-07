@@ -1,4 +1,4 @@
-@nastya2
+@nastya
 Feature: Preapproval Inquiry
 	As as user I should not be able to change the purpose of a loan
 	

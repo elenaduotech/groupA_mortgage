@@ -1,4 +1,4 @@
-@nastya3
+@nastya
 Feature: Estimated purchase price
 	As a user I want to calculate my loan amount by entering the down payment and percentage
 	

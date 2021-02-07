@@ -56,8 +56,9 @@ public class RealtorAndLoanCheckBoxes {
 	public void theUserChoosesYesForQuestion() {
 		NPage np = new NPage();
 		MainPage pm = new MainPage();
+		BrowserUtils.waitForPageToLoad(5);
 		pm.mortgageApplication.click();
-		BrowserUtils.waitFor(4);
+		BrowserUtils.waitFor(2);
 		np.workWithRealtorYesBox.click();
 		assertEquals("Yes", np.workWithRealtorYesBox.getText());
 	}

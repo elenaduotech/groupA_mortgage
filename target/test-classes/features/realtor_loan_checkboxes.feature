@@ -1,9 +1,11 @@
-@nastya1
+@nastya
 Feature: Realtor Information
 As a user when I choose no for realtor I should not be able to enter their information
+
+Background:
+Given The user in on the Main Page
 	
 Scenario: Realtor option with no
-	Given The user in on the Main Page
 	When The user click on the Mortgage Application
 	And The user chooses no for question
 	Then The user should not be able to put any information in Realtor Information Box 

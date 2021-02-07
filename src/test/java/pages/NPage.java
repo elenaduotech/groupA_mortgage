@@ -68,7 +68,6 @@ public class NPage {
 			@FindBy (xpath = "//label[@for='coborrower2']")
 			public WebElement coborrowerNoBox;
 			
-			
 			@FindBy (id = "b_firstName")
 			public WebElement borrowerFirstName;
 			
@@ -90,12 +89,14 @@ public class NPage {
 			@FindBy (id = "b_ssn")
 			public WebElement borrowerSsn;
 			
-			@FindBy (xpath = "(//span[@class='select2-selection__arrow'])[3]")
+			@FindBy (xpath = "(//span[@class='select2-selection select2-selection--single'])[4]")
 			public WebElement maritalStatusDropdownBox;
 			
 			@FindBy (xpath = "//li[@id='select2-b_marital-result-0t2t-Married']")
 			public WebElement marriedOption;
 			
+			@FindBy (xpath = "//input[@class='select2-search__field']")
+			public WebElement inputBox;
 			
 			@FindBy (id = "b_cell")
 			public WebElement borrowerCellPhoneNo;
@@ -126,7 +127,6 @@ public class NPage {
 			
 			@FindBy (id = "employername1")
 			public WebElement employerName;
-			
 			
 			@FindBy (id = "grossmonthlyincome")
 			public WebElement grossMonthlyIncome;
