@@ -11,170 +11,64 @@
         "steps": [
           {
             "result": {
-              "duration": 2550000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
-            "name": "The user is on homepage",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
-            },
+            "name": "The user is on the Employment and Income page",
+            "match": {},
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-06T06:57:30.285Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2861000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 8,
-        "name": "Verify positive login",
+        "start_timestamp": "2021-02-06T07:03:50.953Z",
+        "line": 7,
+        "name": "Clear button",
         "description": "",
-        "id": "verify-customer-sign-in-information;verify-positive-login",
-        "after": [
-          {
-            "result": {
-              "duration": 761000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "borrower-employment-information;clear-button",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2935000000,
-              "status": "passed"
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The user click on the \"Clear\" button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 9,
-            "name": "The user enter correct email and password and clicks Login",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserEnterCorrectEmailAndPasswordAndClicksLogin()"
-            },
-            "keyword": "When "
+            "name": "The message popUp should appear",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 39000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
-            "name": "The user should see his name",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserShouldSeeHisName()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@temp"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2634000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The user is on homepage",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-06T06:57:39.607Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1407000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": ": Verify negative log in",
-        "description": "",
-        "id": "verify-customer-sign-in-information;:-verify-negative-log-in;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 812000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 482000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The user enters \"vickyrid@mc.com\" and \"\u003cwrong_password\u003e\" and clicks Login",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"vickyrid@mc.com\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"\u003cwrong_password\u003e\"",
-                  "offset": 38
-                }
-              ],
-              "location": "step_definitions1.SignInStepDefs.theUserEntersAndAndClicksLogin(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
+            "name": "The message should display \"Clear Employer1 Data?\"",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 52000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 16,
-            "name": "The user should not login and the error message should appear",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserShouldNotLoginAndTheErrorMessageShouldAppear()"
-            },
-            "keyword": "Then "
+            "line": 11,
+            "name": "The user should be able to pick \"Yes\" or \"Cancel\" button",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@temp"
+            "name": "@nastya"
           }
         ]
       },
@@ -187,291 +81,1736 @@
         "steps": [
           {
             "result": {
-              "duration": 2032000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
-            "name": "The user is on homepage",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
-            },
+            "name": "The user is on the Employment and Income page",
+            "match": {},
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-06T06:57:45.016Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1382000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": ": Verify negative log in",
+        "start_timestamp": "2021-02-06T07:03:51.085Z",
+        "line": 13,
+        "name": "Current job",
         "description": "",
-        "id": "verify-customer-sign-in-information;:-verify-negative-log-in;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 703000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 451000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The user enters \"jackpom@mc.com\" and \"\u003cwrong_password\u003e\" and clicks Login",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jackpom@mc.com\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"\u003cwrong_password\u003e\"",
-                  "offset": 37
-                }
-              ],
-              "location": "step_definitions1.SignInStepDefs.theUserEntersAndAndClicksLogin(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 47000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "The user should not login and the error message should appear",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserShouldNotLoginAndTheErrorMessageShouldAppear()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@temp"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1986000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The user is on homepage",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-06T06:57:49.652Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1312000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": ": Verify negative log in",
-        "description": "",
-        "id": "verify-customer-sign-in-information;:-verify-negative-log-in;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 710000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 469000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The user enters \"kentsmith@mc.com\" and \"\u003cwrong_password\u003e\" and clicks Login",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"kentsmith@mc.com\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"\u003cwrong_password\u003e\"",
-                  "offset": 39
-                }
-              ],
-              "location": "step_definitions1.SignInStepDefs.theUserEntersAndAndClicksLogin(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 38000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "The user should not login and the error message should appear",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserShouldNotLoginAndTheErrorMessageShouldAppear()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@temp"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2634000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The user is on homepage",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserIsOnHomepage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-06T06:57:54.184Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1354000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "Verify log out",
-        "description": "",
-        "id": "verify-customer-sign-in-information;verify-log-out",
-        "after": [
-          {
-            "result": {
-              "duration": 1209000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "borrower-employment-information;current-job",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3289000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 27,
-            "name": "The user enter correct email and password and clicks Login",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserEnterCorrectEmailAndPasswordAndClicksLogin()"
-            },
+            "line": 14,
+            "name": "The user clicks on the \"This is my current job\" check box",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 443000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 28,
-            "name": "The user clicks on picture image and presses Log out",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserClicksOnPictureImageAndPressesLogOut()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 92000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "The user should log out and land on homepage with Welcome Back, Automation Testers! message",
-            "match": {
-              "location": "step_definitions1.SignInStepDefs.theUserShouldLogOutAndLandOnHomepageWithWelcomeBackAutomationTestersMessage()"
-            },
+            "line": 15,
+            "name": "The \"End date\" should dissapier",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@temp"
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user is on the Employment and Income page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.096Z",
+        "line": 17,
+        "name": "Enter the Emloyer Information",
+        "description": "",
+        "id": "borrower-employment-information;enter-the-emloyer-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "The user enters the Employer Information",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "The user should be able to lick on the \"Add Another Employer\" button",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
           }
         ]
       }
     ],
-    "name": "Verify customer Sign in information",
+    "name": "Borrower Employment Information",
     "description": "",
-    "id": "verify-customer-sign-in-information",
+    "id": "borrower-employment-information",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/elenaSprint4SingIn.feature",
+    "uri": "file:src/test/resources/features/emplAndIncome.feature",
     "tags": [
       {
-        "name": "@temp",
+        "name": "@nastya",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 2
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user is on the Expenses page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.106Z",
+        "line": 7,
+        "name": "Own Option",
+        "description": "",
+        "id": "user-enters-informtion-about-the-housing;own-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The user click on the \"Own\" button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The green check mark should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user is on the Expenses page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.119Z",
+        "line": 11,
+        "name": "Info Icon",
+        "description": "",
+        "id": "user-enters-informtion-about-the-housing;info-icon",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "The user clicks on the \"i\" icon",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "No message shown",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user is on the Expenses page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.143Z",
+        "line": 15,
+        "name": "The user enters the amount for the first Mortagage total payment",
+        "description": "",
+        "id": "user-enters-informtion-about-the-housing;the-user-enters-the-amount-for-the-first-mortagage-total-payment",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user enters the \"amount\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "The user should be able to see the amount displayed",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "The user should be able to click on \"Next\" button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      }
+    ],
+    "name": "User enters informtion about the housing",
+    "description": "",
+    "id": "user-enters-informtion-about-the-housing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/expensesOwn.feature",
+    "tags": [
+      {
+        "name": "@nastya",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user is on the Expenses page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.153Z",
+        "line": 7,
+        "name": "Rent Option",
+        "description": "",
+        "id": "user-enters-rent-information;rent-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The user click on the \"Rent\" button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The blue check mark should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user is on the Expenses page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.168Z",
+        "line": 11,
+        "name": "The user enters monthly rental payment as letters",
+        "description": "",
+        "id": "user-enters-rent-information;the-user-enters-monthly-rental-payment-as-letters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "The user enters the letters",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "The message should be displayed on the page \"Please Enter a Valid Number\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user is on the Expenses page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.179Z",
+        "line": 15,
+        "name": "The user enters the amount for the rental payment",
+        "description": "",
+        "id": "user-enters-rent-information;the-user-enters-the-amount-for-the-rental-payment",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user enters the \"amount\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "The user should be able to see the amount displayed",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "The user should be able to click on \"Next\" button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      }
+    ],
+    "name": "User enters rent information",
+    "description": "",
+    "id": "user-enters-rent-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/expensesRent.feature",
+    "tags": [
+      {
+        "name": "@nastya",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user is on the Personal Information page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.189Z",
+        "line": 8,
+        "name": "Co-borrower option with no",
+        "description": "",
+        "id": "personal-information;co-borrower-option-with-no",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user chooses \"no\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user should see red check mark next to \"no\" option",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user is on the Personal Information page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.201Z",
+        "line": 12,
+        "name": "Co-borrower option with yes",
+        "description": "",
+        "id": "personal-information;co-borrower-option-with-yes",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "The user click on \"yes\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "The user should be able to see the blue check mark next to \"yes\" option",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user is on the Personal Information page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.211Z",
+        "line": 16,
+        "name": "No personal information",
+        "description": "",
+        "id": "personal-information;no-personal-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "The user click on \"Next\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "The page should contain the red message \"This field is required.\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "The user should stay on the same page",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      }
+    ],
+    "name": "Personal Information",
+    "description": "\tThe user does not provide any personal information",
+    "id": "personal-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/personalInfoNegative.feature",
+    "tags": [
+      {
+        "name": "@nastya",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user is on the Personal Information page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.221Z",
+        "line": 8,
+        "name": "Co-borrower option with no",
+        "description": "",
+        "id": "personal-information;co-borrower-option-with-no",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user chooses \"no\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user should see red check mark next to \"no\" option",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user is on the Personal Information page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.234Z",
+        "line": 12,
+        "name": "One borrower",
+        "description": "",
+        "id": "personal-information;one-borrower",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "If the user enter \"no\" for co-borrower",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "The user should be able to put all required information",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "The user clicks on the \"Privacy Policy\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user clicks \"Next\" button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user is on the Personal Information page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.242Z",
+        "line": 18,
+        "name": "Co-borrower option with yes",
+        "description": "",
+        "id": "personal-information;co-borrower-option-with-yes",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "The user click on \"yes\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "The user should be able to see the blue check mark next to \"yes\" option",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user is on the Personal Information page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.250Z",
+        "line": 22,
+        "name": "The user enters personal information for both borrowers",
+        "description": "",
+        "id": "personal-information;the-user-enters-personal-information-for-both-borrowers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "The user enters the required personal information for first borrower",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "The user should be able to put the co-borrower personal information",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "The user should be able to click on the \"Next\" button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      }
+    ],
+    "name": "Personal Information",
+    "description": "\tAs the user I want to be able to enter all required information",
+    "id": "personal-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/personalInfoPositive.feature",
+    "tags": [
+      {
+        "name": "@nastya",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.260Z",
+        "line": 8,
+        "name": "Realtor option with no",
+        "description": "",
+        "id": "preapproval-details;realtor-option-with-no",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user chooses \"no\" for question",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user should not be able to put any information in Realtor Information Box",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "The user should see red check mark next to \"no\" option",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.278Z",
+        "line": 13,
+        "name": "Realtor option with yes",
+        "description": "",
+        "id": "preapproval-details;realtor-option-with-yes",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "The user chooses \"yes\" for question",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "The user should be able to put in \"name\" and \"phone number\" and \"email adrress\" of the realtor",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user should be able to see the blue check mark next to \"yes\" option",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.284Z",
+        "line": 18,
+        "name": "Loan officer option with no",
+        "description": "",
+        "id": "preapproval-details;loan-officer-option-with-no",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "The user chooses \"no\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "The user should see red check mark next to \"no\" option",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.290Z",
+        "line": 22,
+        "name": "Loan officer option with yes",
+        "description": "",
+        "id": "preapproval-details;loan-officer-option-with-yes",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "The user click on \"yes\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "The user should be able to see the blue check mark next to \"yes\" option",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.296Z",
+        "line": 31,
+        "name": "Puprose of the loan negative entrees",
+        "description": "",
+        "id": "preapproval-details;puprose-of-the-loan-negative-entrees;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "The user enters the \"Business Purchase\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "The system should not recognize the entrees and display the \"No result found\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.303Z",
+        "line": 32,
+        "name": "Puprose of the loan negative entrees",
+        "description": "",
+        "id": "preapproval-details;puprose-of-the-loan-negative-entrees;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "The user enters the \"Condominium\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "The system should not recognize the entrees and display the \"No result found\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.310Z",
+        "line": 33,
+        "name": "Puprose of the loan negative entrees",
+        "description": "",
+        "id": "preapproval-details;puprose-of-the-loan-negative-entrees;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "The user enters the \"Apartment Purchase\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "The system should not recognize the entrees and display the \"No result found\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.317Z",
+        "line": 36,
+        "name": "Puprose of the loan positive entrees",
+        "description": "",
+        "id": "preapproval-details;puprose-of-the-loan-positive-entrees",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "The user enters purpose of the loan as \"Purchase Home\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "The result is found",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.324Z",
+        "line": 47,
+        "name": "Estimated purchase price with numbers",
+        "description": "",
+        "id": "preapproval-details;estimated-purchase-price-with-numbers;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "The user enters \"500000\" for estimated purchase",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "The user enters \"20000\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "The user should see displayed \"4\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "The message should display the \"480000 $\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.331Z",
+        "line": 48,
+        "name": "Estimated purchase price with numbers",
+        "description": "",
+        "id": "preapproval-details;estimated-purchase-price-with-numbers;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "The user enters \"25000\" for estimated purchase",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "The user enters \"2000\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "The user should see displayed \"8\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "The message should display the \"23000 $\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.337Z",
+        "line": 49,
+        "name": "Estimated purchase price with numbers",
+        "description": "",
+        "id": "preapproval-details;estimated-purchase-price-with-numbers;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "The user enters \"12800\" for estimated purchase",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "The user enters \"128\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "The user should see displayed \"1\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "The message should display the \"12672 $\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.344Z",
+        "line": 51,
+        "name": "Source of payment",
+        "description": "",
+        "id": "preapproval-details;source-of-payment",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "The user clicks on the drop down menu for  the source of payment",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "The user should see following options",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Checking/Savings (most recent bank statement)"
+                ]
+              },
+              {
+                "cells": [
+                  "Equity on Pending Sale (executed sales contract)"
+                ]
+              },
+              {
+                "cells": [
+                  "Other type of Down Payment"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The user in on the Preaproval details page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-06T07:03:51.351Z",
+        "line": 58,
+        "name": "Additional founds",
+        "description": "",
+        "id": "preapproval-details;additional-founds",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "The user enters the text",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "Text should be displayed",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "The user shoud be able to enter the \"Next\" button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@nastya"
+          }
+        ]
+      }
+    ],
+    "name": "Preapproval Details",
+    "description": "\tAs as user I want to be able to put my information for the Preapproval details",
+    "id": "preapproval-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/preaprovalDetails.feature",
+    "tags": [
+      {
+        "name": "@nastya",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
         }
       }
     ]
