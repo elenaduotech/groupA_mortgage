@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,381 +11,327 @@
         "steps": [
           {
             "result": {
-              "duration": 5694715000,
+              "duration": 2920312000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "The User is on the homepage",
+            "line": 6,
+            "name": "The user in on Main Page",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2013575000,
+              "duration": 5017113000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
             },
-            "keyword": "When "
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-08T00:59:20.286Z",
+        "start_timestamp": "2021-02-08T01:28:19.932Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3071061000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Puprose of the loan entrees",
+        "description": "",
+        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 176481000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 244966000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks on the purpose of the loan and enters the \"Business Purchase\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Business Purchase\"",
+                  "offset": 58
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32730000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No results found\"",
+                  "offset": 60
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression1"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2353669000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4865980000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-08T01:28:31.541Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1742439000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Puprose of the loan entrees",
+        "description": "",
+        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 155233000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 246417000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks on the purpose of the loan and enters the \"Condominium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Condominium\"",
+                  "offset": 58
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30401000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No results found\"",
+                  "offset": 60
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression1"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3400592000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user in on Main Page",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4865156000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks on the Mortgage Application",
+            "match": {
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-08T01:28:40.956Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1843976000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.setupScenario()"
+            }
+          }
+        ],
         "line": 16,
-        "name": "The user\u0027s information in application list should match with actual data",
+        "name": "Puprose of the loan entrees",
         "description": "",
-        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data;;2",
+        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 172881000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 31185208000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user enters following information in custom type \"Henry\",\"Biden\", \"123-45-6789\", \"01/01/1945\", \"111111111\", \"h@gmail.com\", \"3000\", \"Married\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Henry\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Biden\"",
-                  "offset": 61
-                },
-                {
-                  "val": "\"123-45-6789\"",
-                  "offset": 70
-                },
-                {
-                  "val": "\"01/01/1945\"",
-                  "offset": 85
-                },
-                {
-                  "val": "\"111111111\"",
-                  "offset": 99
-                },
-                {
-                  "val": "\"h@gmail.com\"",
-                  "offset": 112
-                },
-                {
-                  "val": "\"3000\"",
-                  "offset": 127
-                },
-                {
-                  "val": "\"Married\"",
-                  "offset": 135
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserEntersFollowingInformationInCustomType(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3581406000,
+              "duration": 210635000,
               "status": "passed"
             },
             "line": 10,
-            "name": "The user clicks on application list",
+            "name": "The user clicks on the purpose of the loan and enters the \"Apartment Purchase\"",
             "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
+              "arguments": [
+                {
+                  "val": "\"Apartment Purchase\"",
+                  "offset": 58
+                }
+              ],
+              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3622078000,
+              "duration": 27420000,
               "status": "passed"
             },
             "line": 11,
-            "name": "The user should see that the \"123-45-6789\" information is right",
+            "name": "The system should not recognize the entrees and display the \"No results found\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"123-45-6789\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserShouldSeeThatTheInformationIsRight(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 173712000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The User is on the homepage",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 669319000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T01:00:06.470Z",
-        "line": 17,
-        "name": "The user\u0027s information in application list should match with actual data",
-        "description": "",
-        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 37921407000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user enters following information in custom type \"Alex\",\"Biden\", \"223-34-4555\", \"01/01/1965\", \"222222222\", \"a@gmail.com\", \"5000\", \"Married\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Alex\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Biden\"",
+                  "val": "\"No results found\"",
                   "offset": 60
-                },
-                {
-                  "val": "\"223-34-4555\"",
-                  "offset": 69
-                },
-                {
-                  "val": "\"01/01/1965\"",
-                  "offset": 84
-                },
-                {
-                  "val": "\"222222222\"",
-                  "offset": 98
-                },
-                {
-                  "val": "\"a@gmail.com\"",
-                  "offset": 111
-                },
-                {
-                  "val": "\"5000\"",
-                  "offset": 126
-                },
-                {
-                  "val": "\"Married\"",
-                  "offset": 134
                 }
               ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserEntersFollowingInformationInCustomType(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3515080000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3556364000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The user should see that the \"223-34-4555\" information is right",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"223-34-4555\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserShouldSeeThatTheInformationIsRight(java.lang.String)"
+              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 179449000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The User is on the homepage",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 816331000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T01:00:52.317Z",
-        "line": 18,
-        "name": "The user\u0027s information in application list should match with actual data",
-        "description": "",
-        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 30565677000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user enters following information in custom type \"Lily\",\"Biden\", \"987-65-4321\", \"01/01/1985\", \"333333333\", \"h@gmail.com\", \"3000\", \"Married\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Lily\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Biden\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"987-65-4321\"",
-                  "offset": 69
-                },
-                {
-                  "val": "\"01/01/1985\"",
-                  "offset": 84
-                },
-                {
-                  "val": "\"333333333\"",
-                  "offset": 98
-                },
-                {
-                  "val": "\"h@gmail.com\"",
-                  "offset": 111
-                },
-                {
-                  "val": "\"3000\"",
-                  "offset": 126
-                },
-                {
-                  "val": "\"Married\"",
-                  "offset": 134
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserEntersFollowingInformationInCustomType(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3511137000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3564245000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The user should see that the \"987-65-4321\" information is right",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"987-65-4321\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserShouldSeeThatTheInformationIsRight(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
+            "name": "@regression1"
           }
         ]
       }
     ],
-    "name": "Verify application information",
-    "description": "",
-    "id": "verify-application-information",
+    "name": "Preapproval Inquiry",
+    "description": "\tAs as user I should not be able to change the purpose of a loan",
+    "id": "preapproval-inquiry",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/furkanSprint4MultipleUserDemo.feature",
+    "uri": "file:src/test/resources/features/purpose_of_loan.feature",
     "tags": [
       {
-        "name": "@smoke",
+        "name": "@regression1",
         "type": "Tag",
         "location": {
           "line": 1,
