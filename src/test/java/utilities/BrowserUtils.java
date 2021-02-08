@@ -228,6 +228,13 @@ public class BrowserUtils {
     }
     
     
-    
+    public static void popUpHandle(WebElement element) {
+    	JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
+    	   		
+		 try{BrowserUtils.waitForClickablility(element, 10);
+			js.executeScript("arguments[0].click();", element);}
+			catch(Exception e) {}
+    	
+    }
     
 }

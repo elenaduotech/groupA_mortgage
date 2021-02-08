@@ -12,8 +12,8 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		
 		
 		
-		features = "src/test/resources/parallel",  // feature file folder path
-		glue = "step_definitions", // step def classes folder path
+		features = "src/test/resources/features/elena_parallel",  // feature file folder path
+		glue = "step_definitions1", // step def classes folder path
 		
 		plugin = {  "summary", // for generating step definition snippets
 				    "html:target/html-report.html", // to generate basic cucumber html report

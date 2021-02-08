@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@temp",
+		tags = "@elenaRegister",
 
 		
 		features = "src/test/resources/features",  // feature file folder path

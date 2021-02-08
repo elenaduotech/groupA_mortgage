@@ -13,12 +13,12 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@nastya",
+		tags = "@regression",
 
 		
 		features = "src/test/resources/features",  // feature file folder path
 
-		glue = "step_definitions3", // step def classes folder path
+		glue = "step_definitions2", // step def classes folder path
 
 		
 		plugin = {  "summary", // for generating step definition snippets
@@ -28,7 +28,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 				    "rerun:target/failed-scenarios.txt" // to create a text file with the paths for failed scenarios to be re-run
 		         }  
 		
-		//,dryRun = true  // to run the test without launching, we need this to generate step def snippets
+//		,dryRun = true  // to run the test without launching, we need this to generate step def snippets
 		
 		,monochrome = true  // to display console characters correctly in Windows
 		

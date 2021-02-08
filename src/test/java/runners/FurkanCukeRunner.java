@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@furkan1",
+		tags = "@smoke",
 
 		
 		features = "src/test/resources/features",  // feature file folder path
