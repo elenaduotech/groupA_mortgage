@@ -24,11 +24,11 @@ public class EmploymentButtons {
 		si.email.sendKeys(ConfigReader.getProperty("email"));
 		si.password.sendKeys(ConfigReader.getProperty("password"));
 		si.loginButton.click();
-		BrowserUtils.waitForPageToLoad(3);
+		BrowserUtils.waitForPageToLoad(5);
 		
 		MainPage pm = new MainPage();
 		pm.mortgageApplication.click();
-		BrowserUtils.waitFor(3);
+		BrowserUtils.waitFor(5);
 		
 	}
 
@@ -40,7 +40,7 @@ public class EmploymentButtons {
 		np.estimatedPurchasePrice.sendKeys("500000");
 		np.downpaymentAmount.sendKeys("20000");
 		np.nextButton.click();
-		BrowserUtils.waitForPageToLoad(3);
+		BrowserUtils.waitForPageToLoad(5);
 		
 		BrowserUtils.jsClick(np.coborrowerNoBox);
 		np.borrowerFirstName.sendKeys(ConfigReader.getProperty("name"));
@@ -59,7 +59,7 @@ public class EmploymentButtons {
 
 	@When("The user click on the Clear button")
 	public void theUserClickOnTheButton() {
-		BrowserUtils.waitForPageToLoad(3);
+		BrowserUtils.waitForPageToLoad(5);
 	    DPage dp = new DPage();
 	    BrowserUtils.jsClick(dp.clearButton);
 	}
@@ -67,7 +67,7 @@ public class EmploymentButtons {
 	@Then("The message popUp should appear")
 	public void theMessagePopUpShouldAppear() {
 	    DPage dp = new DPage();
-	    assertTrue(BrowserUtils.elementExists(dp.popupClearDialogWindow, 2));
+	    assertTrue(BrowserUtils.elementExists(dp.popupClearDialogWindow, 5));
 	}
 
 	@Then("The message should display {string}")
@@ -123,7 +123,7 @@ public class EmploymentButtons {
 	@Then("The user should be able to see the Employer2")
 	public void theUserShouldBeAbleToSeeTheWindow() {
 		DPage dp = new DPage();
-	    assertTrue(BrowserUtils.elementExists(dp.employer2, 2));
+	    assertTrue(BrowserUtils.elementExists(dp.employer2, 5));
 	}
 
 	@When("The user click on the Add Another Employer")
