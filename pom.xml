@@ -147,7 +147,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
 						<!-- name of your Runner class -->
-						<include>**/*FurkanCukeRunner.java</include>
+						<include>**/*NastaCukeRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
