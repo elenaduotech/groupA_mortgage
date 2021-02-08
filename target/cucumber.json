@@ -11,36 +11,24 @@
         "steps": [
           {
             "result": {
-              "duration": 2920312000,
+              "duration": 5741666000,
               "status": "passed"
             },
             "line": 6,
-            "name": "The user in on Main Page",
+            "name": "The user in on the Main Page",
             "match": {
-              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserInOnTheMainPage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5017113000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "The user clicks on the Mortgage Application",
-            "match": {
-              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-08T01:28:19.932Z",
+        "start_timestamp": "2021-02-08T01:47:28.340Z",
         "before": [
           {
             "result": {
-              "duration": 3071061000,
+              "duration": 2429643000,
               "status": "passed"
             },
             "match": {
@@ -48,14 +36,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Puprose of the loan entrees",
+        "line": 8,
+        "name": "Realtor option with no",
         "description": "",
-        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;2",
+        "id": "realtor-information;realtor-option-with-no",
         "after": [
           {
             "result": {
-              "duration": 176481000,
+              "duration": 145010000,
               "status": "passed"
             },
             "match": {
@@ -64,41 +52,41 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 244966000,
+              "duration": 4998092000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "The user clicks on the purpose of the loan and enters the \"Business Purchase\"",
+            "line": 9,
+            "name": "The user click on the Mortgage Application",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Business Purchase\"",
-                  "offset": 58
-                }
-              ],
-              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserClickOnTheMortgageApplication()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 32730000,
+              "duration": 111399000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user chooses no for question",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesNoForQuestion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151847000,
               "status": "passed"
             },
             "line": 11,
-            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "name": "The user should not be able to put any information in Realtor Information Box",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"No results found\"",
-                  "offset": 60
-                }
-              ],
-              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldNotBeAbleToPutAnyInformationInRealtorInformationBox()"
             },
             "keyword": "Then "
           }
@@ -118,36 +106,24 @@
         "steps": [
           {
             "result": {
-              "duration": 2353669000,
+              "duration": 3672330000,
               "status": "passed"
             },
             "line": 6,
-            "name": "The user in on Main Page",
+            "name": "The user in on the Main Page",
             "match": {
-              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserInOnTheMainPage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4865980000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "The user clicks on the Mortgage Application",
-            "match": {
-              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-08T01:28:31.541Z",
+        "start_timestamp": "2021-02-08T01:47:41.995Z",
         "before": [
           {
             "result": {
-              "duration": 1742439000,
+              "duration": 1810014000,
               "status": "passed"
             },
             "match": {
@@ -155,14 +131,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Puprose of the loan entrees",
+        "line": 13,
+        "name": "Realtor option with yes",
         "description": "",
-        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;3",
+        "id": "realtor-information;realtor-option-with-yes",
         "after": [
           {
             "result": {
-              "duration": 155233000,
+              "duration": 160484000,
               "status": "passed"
             },
             "match": {
@@ -171,148 +147,77 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 246417000,
+              "duration": 2953542000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "The user clicks on the purpose of the loan and enters the \"Condominium\"",
+            "line": 14,
+            "name": "The user chooses yes for question",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Condominium\"",
-                  "offset": 58
-                }
-              ],
-              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesYesForQuestion()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 30401000,
+              "duration": 3120860000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "line": 15,
+            "name": "The user should be able to put in info of the realtor",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"No results found\"",
-                  "offset": 60
-                }
-              ],
-              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldBeAbleToPutInInfoOfTheRealtor()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3400592000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user in on Main Page",
-            "match": {
-              "location": "step_definitions2.PurposeOfLoan.theUserInOnMainPage()"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4865156000,
+              "duration": 4903816000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "The user clicks on the Mortgage Application",
+            "line": 16,
+            "name": "The user chooses no for loan officer",
             "match": {
-              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnTheMortgageApplication()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T01:28:40.956Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1843976000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions2.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Puprose of the loan entrees",
-        "description": "",
-        "id": "preapproval-inquiry;puprose-of-the-loan-entrees;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 172881000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 210635000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user clicks on the purpose of the loan and enters the \"Apartment Purchase\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Apartment Purchase\"",
-                  "offset": 58
-                }
-              ],
-              "location": "step_definitions2.PurposeOfLoan.theUserClicksOnThePurposeOfTheLoanAndEntersThe(java.lang.String)"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesNoForLoanOfficer()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 27420000,
+              "duration": 39264000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "The system should not recognize the entrees and display the \"No results found\"",
+            "line": 17,
+            "name": "The user should see check mark next to no option",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"No results found\"",
-                  "offset": 60
-                }
-              ],
-              "location": "step_definitions2.PurposeOfLoan.theSystemShouldNotRecognizeTheEntreesAndDisplayThe(java.lang.String)"
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldSeeCheckMarkNextToNoOption()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 65937000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The user click on yes",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserClickOnYes()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31034000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The user should be able to see check mark next to yes option",
+            "match": {
+              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldBeAbleToSeeCheckMarkNextToYesOption()"
             },
             "keyword": "Then "
           }
@@ -324,11 +229,11 @@
         ]
       }
     ],
-    "name": "Preapproval Inquiry",
-    "description": "\tAs as user I should not be able to change the purpose of a loan",
-    "id": "preapproval-inquiry",
+    "name": "Realtor Information",
+    "description": "As a user when I choose no for realtor I should not be able to enter their information",
+    "id": "realtor-information",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/purpose_of_loan.feature",
+    "uri": "file:src/test/resources/features/realtor_loan_checkboxes.feature",
     "tags": [
       {
         "name": "@regression1",
