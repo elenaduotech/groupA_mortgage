@@ -1,4 +1,4 @@
-@elenaRegister
+@temp
 Feature: User registration feature
   
  

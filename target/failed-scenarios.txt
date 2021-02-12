@@ -1,6 +1,1 @@
-file:src/test/resources/features/personalInfoNegative.feature:8:12:16
-file:src/test/resources/features/personalInfoPositive.feature:8:12:18:22
-file:src/test/resources/features/preaprovalDetails.feature:8:13:18:22:31:32:33:36:47:48:49:51:58
-file:src/test/resources/features/emplAndIncome.feature:7:13:17
-file:src/test/resources/features/expensesRent.feature:7:11:15
-file:src/test/resources/features/expensesOwn.feature:7:11:15
+file:src/test/resources/features/elena_update_phoneNumber_db.feature:4

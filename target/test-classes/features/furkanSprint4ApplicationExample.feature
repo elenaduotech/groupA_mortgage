@@ -1,4 +1,4 @@
-@furkan
+@smoke
 Feature: Verify application information with multiple user
 
 Background: 

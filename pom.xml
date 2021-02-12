@@ -103,6 +103,19 @@
 			<version>4.1.2</version>
 		</dependency>
 
+<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.3.3</version>
+			<scope>test</scope>
+		</dependency>
 
 
 
@@ -147,7 +160,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
 						<!-- name of your Runner class -->
-						<include>**/*FurkanCukeRunner.java</include>
+						<include>**/*NastyaCukeRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
