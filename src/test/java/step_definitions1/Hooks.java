@@ -27,12 +27,12 @@ public class Hooks {
 		
 	}
 	
-//	@Before ()
-//	public void setupDB() {
-//		
-//		System.out.println("Establishing connectio  to DB");
-//		
-//	}
+	@Before ()
+	public void setupDB() {
+		
+		System.out.println("Establishing connectio  to DB");
+		
+	}
 	
 	
 	
