@@ -2,6 +2,8 @@ package step_definitions1;
 
 import static org.junit.Assert.assertEquals;
 
+import com.github.javafaker.Faker;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.SignInPage;
@@ -33,5 +35,12 @@ public class DBEmailUpdateVerifDefs {
 			
 			String actualName = sp.userNameVerification.getText();
 			assertEquals("Correct Name", expectedName, actualName);
+			
+			
+			//update the email to be able to repeat the test again
+	     
+			String old_updatedEmail = "sophiayen@mc.com";
+			String query = "update tbl_user set email='" + old_updatedEmail  + "' where id='" + id +"'";
+	        DBUtils.updateQuery(query);
 	}
 }

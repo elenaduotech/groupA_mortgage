@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-15T22:01:08.045Z",
+        "start_timestamp": "2021-02-16T07:34:11.623Z",
         "before": [
           {
             "result": {
-              "duration": 2701000000,
+              "duration": 3071000000,
               "status": "passed"
             },
             "match": {
@@ -16,39 +16,22 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
               "location": "step_definitions1.Hooks.setupDB()"
             }
-          },
-          {
-            "result": {
-              "duration": 609000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.HooksDB.setupScenarioDB()"
-            }
           }
         ],
-        "line": 9,
-        "name": "Update user information in DB and verify the change in DB",
+        "line": 4,
+        "name": "Register new user",
         "description": "",
-        "id": "verify-data-base-updated-information;update-user-information-in-db-and-verify-the-change-in-db",
+        "id": "register-new-user-and-log-in;register-new-user",
         "after": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions1.HooksDB.tearDownScenarioDB(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 640000000,
+              "duration": 803000000,
               "status": "passed"
             },
             "match": {
@@ -61,67 +44,145 @@
         "steps": [
           {
             "result": {
-              "duration": 41000000,
+              "duration": 1264000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I update the following information for the users with the following ids",
+            "line": 5,
+            "name": "First name, last name, email and password",
             "match": {
-              "location": "step_definitions1.DBPhoneNumberVerifDefs.iUpdateTheFollowingInformationForTheUsersWithTheFollowingIds(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+              "location": "step_definitions1.APISprint5Defs.firstNameLastNameEmailAndPassword()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "down_payment_percent",
-                  "id"
-                ]
-              },
-              {
-                "cells": [
-                  "20",
-                  "91"
-                ]
-              },
-              {
-                "cells": [
-                  "25",
-                  "99"
-                ]
-              },
-              {
-                "cells": [
-                  "20",
-                  "118"
-                ]
-              }
-            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1332000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters this information",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.userEntersThisInformation()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 70000000,
+              "duration": 155000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Verify that user has updated information",
+            "line": 7,
+            "name": "User is registered in the system",
             "match": {
-              "location": "step_definitions1.DBPhoneNumberVerifDefs.verifyThatUserHasUpdatedInformation()"
+              "location": "step_definitions1.APISprint5Defs.userIsRegisteredInTheSystem()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@db_only"
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-16T07:34:18.400Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1676000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupDB()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verify log in",
+        "description": "",
+        "id": "register-new-user-and-log-in;verify-log-in",
+        "after": [
+          {
+            "result": {
+              "duration": 765000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Email and password",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.emailAndPassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters email and password",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.userEntersEmailAndPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 897000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is able to successfully logged in",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.userIsAbleToSuccessfullyLoggedIn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
           }
         ]
       }
     ],
-    "name": "Verify data base updated information",
+    "name": "Register new user and log in",
     "description": "",
-    "id": "verify-data-base-updated-information",
+    "id": "register-new-user-and-log-in",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/elena_update_phoneandloanfee_db.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/elenaAPITesting.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 4
+        }
+      }
+    ]
   }
 ]
