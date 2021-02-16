@@ -1,4 +1,4 @@
-@smoke
+@db
 Feature: Verify application information with multiple user
 
 Background: 
@@ -8,8 +8,9 @@ Background:
  	Scenario: The user's information in application list should match with actual data
 	Given The user enters following information to the mortgage application
 
-	|name|lastName|ssn      |dob       |cellPhoneNo|email           |monthlyIncome|maritalStatus|
-	|Jo  |Biden   |123456789|01/01/1945|987654321  |jbiden@gmail.com|10000        |Married      |
+	|name|lastName|ssn        |dob       |cellPhoneNo|email           |monthlyIncome|maritalStatus|
+	|Jo  |Biden   |111-22-3333|01/01/1945|987654321  |jbiden@gmail.com|10000        |Married      |
 
 	When The user clicks on application list
 	Then The user should see that the ssn dob information is right
+	And same information needs to be verified in db

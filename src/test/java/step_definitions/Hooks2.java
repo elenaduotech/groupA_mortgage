@@ -11,33 +11,29 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utilities.ConfigReader;
+import utilities.DBUtils;
 import utilities.Driver;
 
-public class Hooks {
-	
-	
-	
-	@Before ("not @db")
+public class Hooks2 {
+
+
+	@Before ("@db")
 	public void setupScenario() {
-		
+
+
 		Driver.getDriver().manage().timeouts().
 		implicitlyWait(Long.parseLong(ConfigReader.getProperty("implicitTimeout")), TimeUnit.SECONDS);
 		Driver.getDriver().manage().window().maximize();
-		
-		
-	}
-	
-	@Before ("@db")
-	public void setupDB() {
-		
-		System.out.println("Establishing connectio  to DB");
+		DBUtils.createConnection();
 		
 	}
 	
+
 	
 	
 	
-	@After ("not @db")
+	
+	@After ("@db")
 	public void tearDownScenario(Scenario scenario) {
 		
 		if(scenario.isFailed()) {
@@ -51,15 +47,12 @@ public class Hooks {
 		
 		
 		Driver.quit();
+
+		DBUtils.close();
 	}
 	
 	
-	@After ("@db")
-	public void tearDownDB() {
-		
-		System.out.println("Closing the connection to DB and cleaning the db");
-		
-	}
+
 	
 
 }
