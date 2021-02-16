@@ -1,4 +1,4 @@
-package furkanApiTesting;
+package step_definitions;
 
 import static org.junit.Assert.*;
 
@@ -23,7 +23,6 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
-
 public class FurkanSprint5ApiTest {
 	
 	static {
@@ -138,7 +137,7 @@ then().log().all().assertThat().statusCode(is(200)).body("success", equalTo(1)).
 		list=(List<Map<String, Object>>) response.get("mortagage_applications");
 	Map<String,Object>eachApp=new LinkedHashMap<>();
 	eachApp = list.get(2);
-	String id=(String)eachApp.get("id");
+	id=(String)eachApp.get("id");
 	System.out.println(id);
 	
 	}
@@ -150,7 +149,7 @@ then().log().all().assertThat().statusCode(is(200)).body("success", equalTo(1)).
 //		Header header1=new Header("Authorization" , token);
 //		
 //		Map<String,String>id1=new HashMap<>();
-//		id1.put("id","201");
+//		id1.put("id",id);
 //		
 //		given().log().all().header(header1).body(id1).
 //		when().log().all().post("/api/ mortagagedetails.php").
