@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 
+
 public class DBUtils {
 	 private static Connection connection;
 	    private static Statement statement;
@@ -150,5 +151,3 @@ public class DBUtils {
 	        return rowCount;
 	    }
 	}
-
-
