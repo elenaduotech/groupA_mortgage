@@ -3,51 +3,48 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5741666000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user in on the Main Page",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserInOnTheMainPage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T01:47:28.340Z",
+        "start_timestamp": "2021-02-14T19:58:25.188Z",
         "before": [
           {
             "result": {
-              "duration": 2429643000,
+              "duration": 6798413000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions2.Hooks.setupScenario()"
+              "location": "step_definitions.Hooks2.setupScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 334000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setupDB()"
             }
           }
         ],
-        "line": 8,
-        "name": "Realtor option with no",
+        "line": 3,
+        "name": "Verify users information",
         "description": "",
-        "id": "realtor-information;realtor-option-with-no",
+        "id": "verify-database-integrity;verify-users-information",
         "after": [
           {
             "result": {
-              "duration": 145010000,
+              "duration": 174000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+              "location": "step_definitions.Hooks.tearDownDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 98704000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks2.tearDownScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -56,187 +53,53 @@
         "steps": [
           {
             "result": {
-              "duration": 4998092000,
+              "duration": 120749000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "The user click on the Mortgage Application",
+            "line": 5,
+            "name": "Get connected to db and receive information about the user",
             "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserClickOnTheMortgageApplication()"
+              "location": "step_definitions.FurkanSprint5OnlyDb.getConnectedToDbAndReceiveInformationAboutTheUser()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 111399000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user chooses no for question",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesNoForQuestion()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 151847000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The user should not be able to put any information in Realtor Information Box",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldNotBeAbleToPutAnyInformationInRealtorInformationBox()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3672330000,
+              "duration": 2275000,
               "status": "passed"
             },
             "line": 6,
-            "name": "The user in on the Main Page",
+            "name": "verify if firstname lastname and email is as expected",
             "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserInOnTheMainPage()"
+              "location": "step_definitions.FurkanSprint5OnlyDb.verifyIfFirstnameLastnameAndEmailIsAsExpected(java.util.List\u003cjava.util.List\u003cjava.lang.String\u003e\u003e)"
             },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T01:47:41.995Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1810014000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions2.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "Realtor option with yes",
-        "description": "",
-        "id": "realtor-information;realtor-option-with-yes",
-        "after": [
-          {
-            "result": {
-              "duration": 160484000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2953542000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "The user chooses yes for question",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesYesForQuestion()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3120860000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The user should be able to put in info of the realtor",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldBeAbleToPutInInfoOfTheRealtor()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4903816000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "The user chooses no for loan officer",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserChoosesNoForLoanOfficer()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 39264000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "The user should see check mark next to no option",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldSeeCheckMarkNextToNoOption()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 65937000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "The user click on yes",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserClickOnYes()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31034000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "The user should be able to see check mark next to yes option",
-            "match": {
-              "location": "step_definitions2.RealtorAndLoanCheckBoxes.theUserShouldBeAbleToSeeCheckMarkNextToYesOption()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "Jo",
+                  "Biden",
+                  "jbiden@gmail.com"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@regression1"
+            "name": "@db"
           }
         ]
       }
     ],
-    "name": "Realtor Information",
-    "description": "As a user when I choose no for realtor I should not be able to enter their information",
-    "id": "realtor-information",
+    "name": "Verify database integrity",
+    "description": "",
+    "id": "verify-database-integrity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/realtor_loan_checkboxes.feature",
+    "uri": "file:src/test/resources/features/furkanSprint5OnlyDb.feature",
     "tags": [
       {
-        "name": "@regression1",
+        "name": "@db",
         "type": "Tag",
         "location": {
           "line": 1,
