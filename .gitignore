@@ -1,1 +1,6 @@
 /target/
+/.classpath
+/bin/
+/test-output/
+/.settings/
+#to remove unwanted folders or files retroactively  -> git rm -r --cached <folder or file name>
