@@ -102,6 +102,25 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.2</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.3.3</version>
+			<scope>test</scope>
+		</dependency>
+
+<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
+		</dependency>
 
 <dependency>
 			<groupId>mysql</groupId>
@@ -117,7 +136,18 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.3.3</version>
+			<scope>test</scope>
+		</dependency>
 
+<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.12.1</version>
+		</dependency>
 
 
 
@@ -160,7 +190,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
 						<!-- name of your Runner class -->
-						<include>**/*NastyaCukeRunner.java</include>
+						<include>**/*FurkanCukeRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>

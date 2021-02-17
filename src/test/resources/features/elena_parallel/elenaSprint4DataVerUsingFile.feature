@@ -1,4 +1,4 @@
-@temp
+
 Feature: User registration feature
   
  

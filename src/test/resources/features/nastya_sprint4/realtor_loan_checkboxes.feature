@@ -1,4 +1,3 @@
-@regression
 Feature: Realtor Information
 As a user when I choose no for realtor I should not be able to enter their information
 

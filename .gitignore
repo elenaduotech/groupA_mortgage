@@ -3,4 +3,8 @@
 /bin/
 /test-output/
 /.settings/
+<<<<<<< HEAD
 #to remove unwanted folders or files retroactively  -> git rm -r --cached <folder or file name>
+=======
+#to remove unwanted folders or files retroactively  -> git rm -r --cached <folder or file name>
+>>>>>>> main

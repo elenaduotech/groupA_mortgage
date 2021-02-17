@@ -1,6 +1,10 @@
 package step_definitions;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import static org.junit.Assert.*;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,11 +23,14 @@ import pages.ViewDetailsPage;
 import pojos.User;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
+import utilities.DBUtils;
 import utilities.Driver;
 import utilities.ExcelUtils;
 
-public class FurkanSprint4ApplicationExampleSteps {
+public class FurkanSprint5DatabaseVerifySteps {
 	
+	private String ssn;
+	private String dob;
 	
 	@Given("The User is on the homepage")
 	public void theUserIsOnTheHomepage() {
@@ -46,6 +53,8 @@ public class FurkanSprint4ApplicationExampleSteps {
 		ExcelUtils excel = new ExcelUtils("testData.xlsx","Sheet1");
 		JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
 	    User user = dataTable.get(0);
+	    ssn=user.getSsn();
+	    dob=user.getDateOfBirth();
 	    MainPage mp = new MainPage();
 	    mp.mortgageApplication.click();
 	    BrowserUtils.waitFor(3);
@@ -143,6 +152,29 @@ public class FurkanSprint4ApplicationExampleSteps {
 		
 		assertEquals(vd.ssn.getText(),ConfigReader.getProperty("ssn"));
 		assertEquals(vd.dateOfBirth.getText(),ConfigReader.getProperty("dob"));
+		
+	
+	}
+	
+	@Then("same information needs to be verified in db")
+	public void sameInformationNeedsToBeVerifiedInDb() {
+	    
+		
+		String query="select b_ssn , b_dob from tbl_mortagage where b_email='jbiden@gmail.com'";
+		
+		List<Map<String,Object>>list=new ArrayList<>();
+		list=DBUtils.getQueryResultMap(query);
+		Map<String,Object>map=new HashMap<>();
+		map=list.get(0);
+		String expectedSsn=(String)map.get("b_ssn");
+		String expectedDob=(String)map.get("b_dob");
+		System.out.println(expectedSsn + " " + expectedDob);
+		System.out.println(ssn + " " + dob);
+		
+		assertEquals(expectedSsn,ssn);
+		assertEquals(expectedDob,ConfigReader.getProperty("dob"));
+		
+		
 		
 		
 		

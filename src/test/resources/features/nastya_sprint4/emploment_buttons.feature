@@ -1,4 +1,3 @@
-@regression
 Feature: Employement and Income Page Functionality
 
 Background: 
