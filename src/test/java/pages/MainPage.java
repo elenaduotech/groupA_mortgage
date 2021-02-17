@@ -25,7 +25,8 @@ public class MainPage {
 	@FindBy (xpath = "//i[@class='toggle-icon font-medium-4 d-none d-xl-block primary bx bx-disc']")
 	public WebElement toggleIcon;
 	
-	
+	@FindBy(className = "user-name")
+	public WebElement userName;
 	
 	
 	
