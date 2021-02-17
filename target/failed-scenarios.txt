@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-file:src/test/resources/features/register_api.feature:4
-=======
-file:src/test/resources/features/furkanSprint5DatabaseVerify.feature:8
->>>>>>> main

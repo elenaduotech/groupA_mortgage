@@ -3,29 +3,39 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-17T01:01:58.559Z",
+        "start_timestamp": "2021-02-17T02:34:41.886Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions2.Hooks.setupScenario()"
+              "location": "step_definitions1.Hooks.setupDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2683000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
             }
           }
         ],
         "line": 4,
-        "name": "Login Verification",
+        "name": "Register new user",
         "description": "",
-        "id": "verify-the-login-api-test;login-verification",
+        "id": "register-new-user-and-log-in;register-new-user",
         "after": [
           {
             "result": {
+              "duration": 828000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -34,57 +44,371 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1614000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "The user information",
-            "match": {},
+            "name": "First name, last name, email and password",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.firstNameLastNameEmailAndPassword()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 1211000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "Send a POST request to the endpoint \"/api/register.php\"",
-            "match": {},
+            "name": "User enters this information",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.userEntersThisInformation()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 150000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "The message should be \"You have successfully registered.\"",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
+            "name": "User is registered in the system",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.userIsRegisteredInTheSystem()"
             },
-            "line": 8,
-            "name": "The status code should be 200",
-            "match": {},
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api_test"
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-17T02:34:48.491Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1370000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verify log in",
+        "description": "",
+        "id": "register-new-user-and-log-in;verify-log-in",
+        "after": [
+          {
+            "result": {
+              "duration": 725000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Email and password",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.emailAndPassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters email and password",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.userEntersEmailAndPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1309000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is able to successfully logged in",
+            "match": {
+              "location": "step_definitions1.APISprint5Defs.userIsAbleToSuccessfullyLoggedIn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
           }
         ]
       }
     ],
-    "name": "Verify the login API test",
+    "name": "Register new user and log in",
     "description": "",
-    "id": "verify-the-login-api-test",
+    "id": "register-new-user-and-log-in",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/register_api.feature",
+    "uri": "file:src/test/resources/features/elenaAPITesting.feature",
     "tags": [
       {
-        "name": "@api_test",
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 4
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T02:34:52.076Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1558000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 652000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.HooksDB.setupScenarioDB()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Update user phone Number in DB and verify the change in DB",
+        "description": "",
+        "id": "verify-data-base-updated-information;update-user-phone-number-in-db-and-verify-the-change-in-db",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.HooksDB.tearDownScenarioDB(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 675000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I update user phone number with \"2405550000\" for a user with id \"2367\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2405550000\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"2367\"",
+                  "offset": 64
+                }
+              ],
+              "location": "step_definitions1.DBPhoneNumberVerifDefs.iUpdateUserPhoneNumberWithForAUserWithId(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that user has updated phone number",
+            "match": {
+              "location": "step_definitions1.DBPhoneNumberVerifDefs.verifyThatUserHasUpdatedPhoneNumber()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db_only"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-17T02:34:55.145Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1533000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.HooksDB.setupScenarioDB()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Update user information in DB and verify the change in DB",
+        "description": "",
+        "id": "verify-data-base-updated-information;update-user-information-in-db-and-verify-the-change-in-db",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.HooksDB.tearDownScenarioDB(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 658000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I update the following information for the users with the following ids",
+            "match": {
+              "location": "step_definitions1.DBPhoneNumberVerifDefs.iUpdateTheFollowingInformationForTheUsersWithTheFollowingIds(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "down_payment_percent",
+                  "id"
+                ]
+              },
+              {
+                "cells": [
+                  "20",
+                  "91"
+                ]
+              },
+              {
+                "cells": [
+                  "25",
+                  "99"
+                ]
+              },
+              {
+                "cells": [
+                  "20",
+                  "118"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify that user has updated information",
+            "match": {
+              "location": "step_definitions1.DBPhoneNumberVerifDefs.verifyThatUserHasUpdatedInformation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db_only"
+          }
+        ]
+      }
+    ],
+    "name": "Verify data base updated information",
+    "description": "",
+    "id": "verify-data-base-updated-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/elena_update_phoneandloanfee_db.feature",
+    "tags": [
+      {
+        "name": "@db_only",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -92,5 +416,121 @@
         }
       }
     ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T02:34:57.859Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1567000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.setupScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2767000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.HooksDB.setupScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Update user email in DB and verify the change on the UI",
+        "description": "",
+        "id": "verify-moving-icons-on-mortgage-application-page;update-user-email-in-db-and-verify-the-change-on-the-ui",
+        "after": [
+          {
+            "result": {
+              "duration": 811000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.HooksDB.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions1.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I update user email with \"sophiayeng@mc.com\" for a user with id \"2367\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sophiayeng@mc.com\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"2367\"",
+                  "offset": 64
+                }
+              ],
+              "location": "step_definitions1.DBEmailUpdateVerifDefs.iUpdateUserEmailWithForAUserWithId(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3851000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Check if user can login using updated email info and see user\u0027s name \"Sophia Yen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sophia Yen\"",
+                  "offset": 69
+                }
+              ],
+              "location": "step_definitions1.DBEmailUpdateVerifDefs.checkIfUserCanLoginUsingUpdatedEmailInfoAndSeeUserSName(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui_db"
+          }
+        ]
+      }
+    ],
+    "name": "Verify moving icons on Mortgage Application Page",
+    "description": "",
+    "id": "verify-moving-icons-on-mortgage-application-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/elena_update_user_email_db.feature",
+    "tags": []
   }
 ]
