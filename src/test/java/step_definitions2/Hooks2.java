@@ -16,7 +16,7 @@ import utilities.Driver;
 
 public class Hooks2 {
 
-	@Before("@loanApp")
+	@Before("@db_test")
 	public void setupScenario() {
 
 		Driver.getDriver().manage().timeouts()
@@ -27,7 +27,7 @@ public class Hooks2 {
 
 	}
 
-	@After("@loanApp")
+	@After("@db_test")
 	public void tearDownScenario(Scenario scenario) {
 
 		if (scenario.isFailed()) {
