@@ -10,7 +10,7 @@ import utilities.DBUtils;
 public class FurkanSprint5OnlyDb {
 	
 	Map<String,Object>map;
-	Map<String,Object>map2;
+//	Map<String,Object>map2;
 	
 	@Given("Get connected to db and receive information about the user")
 	public void getConnectedToDbAndReceiveInformationAboutTheUser() {
@@ -21,7 +21,7 @@ String query="select b_firstName , b_lastName , b_email from tbl_mortagage where
 	List<Map<String,Object>>list=DBUtils.getQueryResultMap(query);
 
 	map=list.get(0);
-	map2=list.get(1);
+//	map2=list.get(1);
 	
 	
 	}
@@ -38,9 +38,9 @@ String query="select b_firstName , b_lastName , b_email from tbl_mortagage where
 		assertEquals(map.get("b_firstName") , actualName);
 		assertEquals(map.get("b_lastName") , actualLastName);
 		assertEquals(map.get("b_email") , actualEmail);
-		assertEquals(map2.get("b_firstName") , actualName);
-		assertEquals(map2.get("b_lastName") , actualLastName);
-		assertEquals(map2.get("b_email") , actualEmail);
+//		assertEquals(map2.get("b_firstName") , actualName);
+//		assertEquals(map2.get("b_lastName") , actualLastName);
+//		assertEquals(map2.get("b_email") , actualEmail);
 		
 		
 		

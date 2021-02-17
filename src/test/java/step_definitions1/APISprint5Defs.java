@@ -74,10 +74,10 @@ public class APISprint5Defs {
 public void emailAndPassword() {
 	
 	 Map<String,Object> map = new LinkedHashMap<>();
-	    map.put("first_name", ConfigReader.getProperty("first_name"));
-	    map.put("last_name", ConfigReader.getProperty("last_name"));
-	    map.put("email", ConfigReader.getProperty("email"));
-	    map.put("password", ConfigReader.getProperty("password"));
+	    map.put("first_name", ConfigReader.getProperty("first_name2"));
+	    map.put("last_name", ConfigReader.getProperty("last_name2"));
+	    map.put("email", ConfigReader.getProperty("email2"));
+	    map.put("password", ConfigReader.getProperty("password2"));
 	given().log().all().body(map).when().log().all().post("/api/register.php").then().log().all().
     assertThat().statusCode(is(200));
 	
@@ -86,8 +86,8 @@ public void emailAndPassword() {
 	
 	
 	   Map<String,String> loginBody= new LinkedHashMap<>();
-	    loginBody.put("email", ConfigReader.getProperty("email"));
-	    loginBody.put("password", ConfigReader.getProperty("password"));
+	    loginBody.put("email", ConfigReader.getProperty("email2"));
+	    loginBody.put("password", ConfigReader.getProperty("password2"));
 	   
 	requestSpecification = given().log().all().body(loginBody);
 	

@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		
 
-		tags = "@test",
+		tags = "@test or @ui_db or @db_only",
 
 		
 		features = "src/test/resources/features",  // feature file folder path
