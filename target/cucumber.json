@@ -3,63 +3,29 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1356000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The User is on the homepage",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3595000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T23:52:35.873Z",
+        "start_timestamp": "2021-02-17T01:01:58.559Z",
         "before": [
           {
             "result": {
-              "duration": 4240000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions.Hooks.setupScenario()"
+              "location": "step_definitions2.Hooks.setupScenario()"
             }
           }
         ],
-        "line": 8,
-        "name": "The user\u0027s information in application list should match with actual data",
+        "line": 4,
+        "name": "Login Verification",
         "description": "",
-        "id": "verify-application-information-with-multiple-user;the-user-s-information-in-application-list-should-match-with-actual-data",
+        "id": "verify-the-login-api-test;login-verification",
         "after": [
           {
             "result": {
-              "duration": 1006000000,
               "status": "passed"
             },
             "match": {
-              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+              "location": "step_definitions2.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -68,543 +34,57 @@
         "steps": [
           {
             "result": {
-              "duration": 37941000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 9,
-            "name": "The user enters following information to the mortgage application",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersFollowingInformationToTheMortgageApplication(java.util.List\u003cpojos.User\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "name",
-                  "lastName",
-                  "ssn",
-                  "dob",
-                  "cellPhoneNo",
-                  "email",
-                  "monthlyIncome",
-                  "maritalStatus"
-                ]
-              },
-              {
-                "cells": [
-                  "Jo",
-                  "Biden",
-                  "123456789",
-                  "01/01/1945",
-                  "987654321",
-                  "jbiden@gmail.com",
-                  "10000",
-                  "Married"
-                ]
-              }
-            ],
+            "line": 5,
+            "name": "The user information",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4543000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 14,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
-            },
+            "line": 6,
+            "name": "Send a POST request to the endpoint \"/api/register.php\"",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4249000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 15,
-            "name": "The user should see that the ssn dob information is right",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserShouldSeeThatTheNameSsnDobInformationIsRight()"
-            },
+            "line": 7,
+            "name": "The message should be \"You have successfully registered.\"",
+            "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The status code should be 200",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
+            "name": "@api_test"
           }
         ]
       }
     ],
-    "name": "Verify application information with multiple user",
+    "name": "Verify the login API test",
     "description": "",
-    "id": "verify-application-information-with-multiple-user",
+    "id": "verify-the-login-api-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/furkanSprint4ApplicationExample.feature",
+    "uri": "file:src/test/resources/features/register_api.feature",
     "tags": [
       {
-        "name": "@smoke",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1479000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The User is on the homepage",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2724000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T23:53:32.975Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2125000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "The user\u0027s information in application list should match with actual data",
-        "description": "",
-        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 845000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 34767000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user enters following information in custom type \"Henry\",\"Biden\", \"123-45-6789\", \"01/01/1945\", \"111111111\", \"h@gmail.com\", \"3000\", \"Married\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Henry\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Biden\"",
-                  "offset": 61
-                },
-                {
-                  "val": "\"123-45-6789\"",
-                  "offset": 70
-                },
-                {
-                  "val": "\"01/01/1945\"",
-                  "offset": 85
-                },
-                {
-                  "val": "\"111111111\"",
-                  "offset": 99
-                },
-                {
-                  "val": "\"h@gmail.com\"",
-                  "offset": 112
-                },
-                {
-                  "val": "\"3000\"",
-                  "offset": 127
-                },
-                {
-                  "val": "\"Married\"",
-                  "offset": 135
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserEntersFollowingInformationInCustomType(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4077000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3968000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The user should see that the \"123-45-6789\" information is right",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"123-45-6789\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserShouldSeeThatTheInformationIsRight(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3634000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The User is on the homepage",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2593000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T23:54:22.975Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2160000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "The user\u0027s information in application list should match with actual data",
-        "description": "",
-        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1047000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 34595000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user enters following information in custom type \"Alex\",\"Biden\", \"223-34-4555\", \"01/01/1965\", \"222222222\", \"a@gmail.com\", \"5000\", \"Married\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Alex\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Biden\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"223-34-4555\"",
-                  "offset": 69
-                },
-                {
-                  "val": "\"01/01/1965\"",
-                  "offset": 84
-                },
-                {
-                  "val": "\"222222222\"",
-                  "offset": 98
-                },
-                {
-                  "val": "\"a@gmail.com\"",
-                  "offset": 111
-                },
-                {
-                  "val": "\"5000\"",
-                  "offset": 126
-                },
-                {
-                  "val": "\"Married\"",
-                  "offset": 134
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserEntersFollowingInformationInCustomType(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4075000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4129000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The user should see that the \"223-34-4555\" information is right",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"223-34-4555\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserShouldSeeThatTheInformationIsRight(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1207000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "The User is on the homepage",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserIsOnTheHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2193000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user enters correct credentials and click on login",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserEntersCorrectCredentialsAndClickOnLogin()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-08T23:55:15.221Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2475000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.setupScenario()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "The user\u0027s information in application list should match with actual data",
-        "description": "",
-        "id": "verify-application-information;the-user-s-information-in-application-list-should-match-with-actual-data;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 760000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 36728000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The user enters following information in custom type \"Lily\",\"Biden\", \"987-65-4321\", \"01/01/1985\", \"333333333\", \"h@gmail.com\", \"3000\", \"Married\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Lily\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"Biden\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"987-65-4321\"",
-                  "offset": 69
-                },
-                {
-                  "val": "\"01/01/1985\"",
-                  "offset": 84
-                },
-                {
-                  "val": "\"333333333\"",
-                  "offset": 98
-                },
-                {
-                  "val": "\"h@gmail.com\"",
-                  "offset": 111
-                },
-                {
-                  "val": "\"3000\"",
-                  "offset": 126
-                },
-                {
-                  "val": "\"Married\"",
-                  "offset": 134
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserEntersFollowingInformationInCustomType(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4101000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user clicks on application list",
-            "match": {
-              "location": "step_definitions.FurkanSprint4ApplicationExampleSteps.theUserClicksOnApplicationList()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4333000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The user should see that the \"987-65-4321\" information is right",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"987-65-4321\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.FurkanSprint4MultipleUserSteps.theUserShouldSeeThatTheInformationIsRight(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      }
-    ],
-    "name": "Verify application information",
-    "description": "",
-    "id": "verify-application-information",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/furkanSprint4MultipleUserDemo.feature",
-    "tags": [
-      {
-        "name": "@smoke",
+        "name": "@api_test",
         "type": "Tag",
         "location": {
           "line": 1,

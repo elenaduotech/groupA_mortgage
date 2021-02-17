@@ -56,5 +56,30 @@ public class DPage {
 	@FindBy (id = "swal2-title")
 	public WebElement popupHeader2;
 	
+	@FindBy (id = "grossmonthlyincome")
+	public WebElement income;
 	
+	@FindBy (xpath = "(//table//td)[2]")
+	public WebElement realtorInfo;
+	
+	@FindBy (xpath = "(//table//td)[5]")
+	public WebElement estimatedPurchasePrice;
+	
+	@FindBy (xpath = "(//table//td)[12]")
+	public WebElement fullName;
+	
+	@FindBy (xpath = "(//table//td)[14]")
+	public WebElement dob;
+	
+	@FindBy (xpath = "(//table//td)[15]")
+	public WebElement ssn;
+	
+	@FindBy (xpath = "(//table//td)[16]")
+	public WebElement maritalStatus;
+	
+	@FindBy (xpath = "(//table//td)[21]")
+	public WebElement employer;
+//	
+//	@FindBy (id = "swal2-title")
+//	public WebElement popupHeader2;
 }
